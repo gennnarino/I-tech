@@ -126,18 +126,13 @@ h1 small, .h1 small{
 	font-size: 1em;
 	color:  #000000;
 }
-/* Pulsanti offerte */
-
-.btn-primary{
-	background-color: #00ff00;
-}
 
 /* Offerte in evidenza */
 
 .box-offerta{
 	margin-bottom: 10px;
 	padding: 15px;
- 	background-color: #428bca;
+ 	background-color: #86b6de;
  	-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
   	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
 }
