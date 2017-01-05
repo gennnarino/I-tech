@@ -28,16 +28,6 @@
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
 
-        <!-- Script show/hide -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script>
-			$(document).ready(function(){
-    			$("#hideshow").click(function(){
-        			$("#formlogin").toggle();
-    			});
-			});
-		</script>
-		<!-- FINE Script show/hide -->
 
 	</head>
 
@@ -114,17 +104,21 @@
 
 							<!-- Accedi -->
 							<li>
-								<a href="#" id="hideshow">
-									Accedi/Registrati
-								</a>
-								<!-- Inserire php per accesso -->
-
-								<!-- Input per l'accesso -->
-								
-								<!-- FINE Input per l'accesso -->
-
+								<li>
+  									<input type="text"  class="form-control" id="username" placeholder="Username">
+								</li>
+								<li>
+  									<input type="password"  class="form-control" id="pass" placeholder="Password">
+								</li>
+								<li>
+									<button type="submit" class="btn btn-default" id="entra">Entra</button>
+								</li>
+								<li>
+									<button type="submit" class="btn btn-default" id="reg">Registrati</button>
+								</li>
 							</li>
 							<!-- FINE Accedi-->
+
 						</ul>
 						<!-- FINE Lista per il menù -->
 					</div><!-- /.nav-collapse -->
@@ -133,25 +127,6 @@
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
 
-		<div id="formlogin" class="container">
-			<div class="collapse navbar-collapse navbar-responsive-collapse">
-				<ul class="nav navbar-nav">
-					<li>
-  						<input type="text"  class="form-control" id="username" placeholder="Username">
-					</li>
-					<li>
-  						<input type="password"  class="form-control" id="pass" placeholder="Password">
-					</li>
-					<li>
-						<button type="submit" class="btn btn-default">Entra</button>
-					</li>
-					<li>
-						<button type="submit" class="btn btn-default">Registrati</button>
-					</li>
-				</ul>
-			</div>
-		</div>
-		
 		<!-- Corpo del sito -->
 		<div class="container">
 			<!-- Messaggio di benvenuto -->
