@@ -1,0 +1,250 @@
+/* Font family e colore di sfondo */
+
+body{
+	background-color: #fcfcfc;
+	font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Classe per applicazione margine minore */
+
+.margin-bottom{
+	margin-bottom: 20px;
+}
+
+/* Stili Navbar */
+
+.navbar{
+	border:none;
+}
+
+.navbar-nav{
+	margin-top:0;
+}
+
+.navbar-brand{
+	display: inline-block;
+	text-indent: -9999px;
+	width: 190px;
+	height: 50px;
+	background: url(../img/logo.png) center center no-repeat;
+}
+
+.navbar-default{
+	background-color: #fcfcfc;
+}
+
+.navbar-default .navbar-nav >li >a {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #333333;
+	border-bottom: 1px solid #357ebd;
+}
+
+.navbar-default .navbar-nav >li >a:hover,
+.navbar-default .navbar-nav >li >a:focus{
+	color: #357ebd;
+}
+
+.navbar-default .navbar-nav >a,
+.navbar-default .navbar-nav >a:hover,
+.navbar-default .navbar-nav >a:focus{
+	color: #fff;
+	background-color: #357ebd;
+}
+
+.navbar-toggle{
+	border-radius: 0;
+}
+
+.navbar-default .navbar-toggle{
+	border: 1px solid #357ebd;
+}
+
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #357ebd;
+}
+
+.navbar-default .navbar-collapse{
+	border-color: transparent;
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret{
+	border-top-color: #357ebd;
+	border-bottom-color: #357ebd;
+}
+
+.navbar-default .navbar-nav > .open >a,
+.navbar-default .navbar-nav > .open >a:hover,
+.navbar-default .navbar-nav > .open >a:focus{
+	color: #fff;
+	background-color: #357ebd;
+}
+
+.navbar-default .navbar-nav > .open >a .caret,
+.navbar-default .navbar-nav > .open >a:hover .caret,
+.navbar-default .navbar-nav > .open >a:focus .caret{
+	border-top-color: #333;
+	border-bottom-color: #333;
+}
+
+.navbar-default .navbar-nav .dropdown >a .caret{
+	border-top-color: #333;
+	border-bottom-color: #333;
+}
+
+@media screen and (min-width: 768px){
+	.navbar-default .navbar-nav >li >a{
+		border-bottom: none;
+	}
+
+	.navbar-default .navbar-nav >li >a:hover,
+	.navbar-default .navbar-nav >li >a:focus{
+		border-top: 2px solid #357ebd;
+		padding-top: 13px;
+	}
+}
+
+/* Stili menù dropdown */
+
+.dropdown-menu{
+	padding: 0 0;
+	border-radius: 0;
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.175);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.175);
+}
+
+.dropdown-menu >li >a{
+	padding: 7px 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+/* Stili corpo pagina */
+
+h1 small, .h1 small{
+	font-size: 1em;
+	color:  #000000;
+}
+/* Pulsanti offerte */
+
+.btn-primary{
+	background-color: #00ff00;
+}
+
+/* Offerte in evidenza */
+
+.box-offerta{
+	margin-bottom: 10px;
+	padding: 15px;
+ 	background-color: #428bca;
+ 	-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+}
+
+.box-offerta h3, .box-offerta h4{
+	margin-top: 0;
+}
+
+/* Stile per sovrascrivere e modificare le immagini thumbnail di Bootstrap */
+
+.thumbnail, .img-thumbnail {
+ 	border-radius: 0;
+  	border: 1px solid #bbbbbb;
+}
+
+/* Stili per sovrascrivere e modificare i bottoni standard di Bootstrap */
+
+.btn {
+  	border: 0;
+  	border-radius: 0;
+}
+
+.btn:focus {
+ 	 outline: 0;
+}
+
+/* Testata */
+
+.header-sezione{
+	border-bottom: 2px solid #357ebd;
+}
+
+@media screen and (min-width: 768px){
+	.header-sezione{
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+
+/* Footer */
+
+footer{
+	padding: 25px;
+ 	background-color: #357ebd;
+ 	color: #fff;
+}
+
+footer a, footer a:hover {
+	color: #5cb85c;
+}
+
+#footer-copy {
+ 	padding: 10px 0 0 0;
+ 	border-top: 1px solid #fff;
+}
+
+/* Stile per modificare e sovrascrivere l'aspetto degli input di Bootstrap */
+
+.form-control{
+	height: 32px;
+  	padding: 6px 12px;
+  	color: #333333;
+  	border-radius: 0;
+}
+
+/* Titoli pagina contatti */
+
+.contatti-titoli{
+	margin-bottom: 15px;
+ 	border-bottom: 2px solid #357ebd;
+ 	padding-bottom: 10px;
+}
+
+/* Stili per sovrascrivere e modificare il componente Accordion/collapse di Bootstrap */
+
+.panel {
+  	border: 1px solid #dddddd;
+  	border-radius: 0;
+}
+
+.panel-heading {
+  	border-top-right-radius: 0;
+  	border-top-left-radius: 0;
+}
+
+.panel-title > a {
+  	color: #fff;
+  	text-decoration: none;
+}
+
+.panel-group .panel {
+  	border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  	margin-top: 0;
+}
+
+.panel-default > .panel-heading {
+  	background-color: #5cb85c;
+  	border-color: #dddddd;
+}
+
+.panel-default > .panel-heading + .panel-collapse .panel-body {
+  	border-top-color: #dddddd;
+}
+
+.panel-default > .panel-footer + .panel-collapse .panel-body {
+  	border-bottom-color: #dddddd;
+}
