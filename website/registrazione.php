@@ -107,7 +107,7 @@
 								<form method="post" action="login.php" class="form-inline">
 									<fieldset>
 										<div class="form-group">
-											<input type="text" class="form-control" id="mail" name="mail" placeholder="Username">
+											<input type="text" class="form-control" id="username" name="username" placeholder="Username">
 										</div>
 										<div class="form-group">
   											<input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
@@ -118,125 +118,108 @@
 									</fieldset>
 								</form>
 							</li>
-
-							<li>
-								<form action="registrazione.php" class="form-inline">
-									<div class="form-group">
-										<button type="submit" class="btn btn-default" id="registrazione">Registrati</button>
-									</div>
-								</form>
-							</li>
 							<!-- FINE Accesso e registrazione -->
 						</ul>
 						<!-- FINE Lista per il menù -->
 					</div><!-- /.nav-collapse -->
 					<!-- FINE Barra dei menù-->
-					
-				</div>
+					</div>
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
 
 		<!-- Corpo del sito -->
-		<div class="container">
-			<!-- Messaggio di benvenuto -->
-			<section id="presentazione">
-				<div class="row">
-					<div class="col-sm-12">
-						<!-- Titolo messaggio -->
-						<h1 class="text-center">
-							<small>Benvenuto in I-Tech.it</small>
-						</h1>
-						<!-- FINE Titolo messaggio-->
+		<div class="conteiner">	
 
-						<!-- Sottotitolo messaggio -->
-						<p class="lead text-center" style="color: #d3d3d3">Il portale italiano dedicato alla tecnologia</p>
-						<!-- FINE Sottotitolo messaggio -->
-					</div>
+			<!-- Form registrazione -->
+			<div class="row">
+				<div class="col-sm-2">
 				</div>
-			</section>
-			<!-- FINE Messaggio di benvenuto -->
+				<div class="col-sm-9">
+					<form method="post" action="login.php" class="col-sm-11" id="form-reg">
+						<fieldset name="registrazione">
 
-			<!-- Offerte in evidenza -->
-			<section id="offerte-in-evidenza">
-				<div class="row">
+							<!-- Dati personali -->
+							<legend>Dati personali</legend>
 
-					<!-- Prima offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Postazione pc completa</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta1.png" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima postazione pc completa per ufficio:<br>
-								- Monitor 19"<br>
-								- Processore Intel i3<br>
-								- HDD 1 TB<br>
-								- RAM 8 GB<br>
-								- Mouse e tastiera<br>
-								- Casse Logitech<br>
-								Prezzo 399,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Prima offerta-->
+								<div class="form-group col-sm-11">
+									<label for="nome" class="col-sm-2 col-lg-2 control-label">Nome</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control col-sm-11" id="nome" name="nome" placeholder="Inserire il nome">
+									</div>
+								</div>
 
-					<!-- Seconda offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Postazione gaming</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta2.png" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima postazione pc completa per gamer:<br>
-								- Monitor 24"<br>
-								- Processore Intel i7<br>
-								- SSD 256 GB<br>
-								- HDD 1 TB<br>
-								- RAM 16 GB<br>
-								- Mouse e tastiera ProGame<br>
-								Prezzo 1199,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Seconda offerta-->
+								<div class="form-group col-sm-11">
+									<label for="cognome" class="col-sm-2 col-lg-2 control-label">Cognome</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="cognome" name="cognome" placeholder="Inserire il cognome">
+									</div>
+								</div>
 
-					<!-- Terza offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Tablet Samsung</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta3.jpeg" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima tablet Samsung Tab 3:<br>
-								- Display 7"<br>
-								- WiFi<br>
-								- GPS<br>
-								- ROM 8 GB<br>
-								- RAM 2 GB<br>
-								- Cover protettiva in silicone<br>
-								Prezzo 199,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Terza offerta-->
+								<div class="form-group col-sm-11">
+									<label for="indirizzo" class="col-sm-2 col-lg-2 control-label">Indirizzo</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="indirizzo" name="indirizzo" placeholder="Inserire l'indirizzo">
+									</div>
+								</div>
 
+								<div class="form-group col-sm-11">
+									<label for="cf" class="col-sm-2 col-lg-2 control-label">C.F.</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="cf" name="cf" placeholder="Inserire il codice fiscale">
+									</div>
+								</div>
+
+								<div class="form-group col-sm-11">
+									<label for="telefono" class="col-sm-2 col-lg-2 control-label">Telefono</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="telefono" name="telefono" placeholder="Inserire il numero di telefono">
+									</div>
+								</div>
+							<!-- FINE Dati personali -->
+
+							<!-- Dati di accesso -->
+							<legend>Dati di accesso</legend>
+								<div class="form-group col-sm-11">
+									<label for="mail" class="col-sm-2 col-lg-2 control-label">E-mail</label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="mail" name="mail" placeholder="Inserire la mail">
+									</div>
+								</div>
+								<div class="form-group col-sm-11">
+									<label for="mail" class="col-sm-2 col-lg-2 control-label"></label>
+									<div class="col-sm-9">
+										<input type="text" class="form-control" id="mailv" placeholder="Reinserire la mail">
+									</div>
+								</div>
+								<div class="form-group col-sm-11">
+									<label for="pass" class="col-sm-2 col-lg-2 control-label">Password</label>
+									<div class="col-sm-9">
+										<input type="password" class="form-control" id="pass" name="pass" placeholder="Inserire la password">
+									</div>
+								</div>
+								<div class="form-group col-sm-11">
+									<label for="passv" class="col-sm-2 col-lg-2 control-label"></label>
+									<div class="col-sm-9">
+										<input type="password" class="form-control" id="passv" placeholder="Reinserire la password">
+									</div>
+								</div>
+								<!-- FINE Dati di accesso -->
+
+								<!-- Button -->
+								<div class="form-group col-sm-11">
+									<div class="col-sm-9">
+										<button type="submit" class="btn btn-primary" id="conferma">Conferma</button>
+									</div>
+								</div>
+								<!-- FINE Button -->
+						</fieldset>
+					</form>
 				</div>
-			</section>
-			<!-- FINE Offerte in evidenza -->
+			</div>
+			<!-- FINE Form registrazione -->
+
 		</div>
-		<!-- FINE corpo del sito -->
+		<!-- FINE Corpo del sito -->
 
 		<!-- Footer -->
 		<footer>
