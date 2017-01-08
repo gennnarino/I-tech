@@ -120,6 +120,11 @@ body{
 	border-bottom: 1px solid #ccc;
 }
 
+/* Stile login */
+.form-inline input {
+	width: 170px;
+}
+
 /* Stili corpo pagina */
 
 h1 small, .h1 small{
