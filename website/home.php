@@ -1,7 +1,12 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
-
+<?php
+	$Admin=$_SESSION["admin"];
+?>
 <html>
 
 	<head>
@@ -49,7 +54,7 @@
                             <span class="icon-bar"></span>
 						</button>
 						<!-- Logo con reindirizzazione su home page -->
-						<a class="navbar-brand" href="home.html">I-Tech</a>
+						<a class="navbar-brand" href="home.php">I-Tech</a>
 					</div>
 					<!-- Barra dei menù-->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -83,13 +88,10 @@
 								<!-- Item menù riparazioni -->
 								<ul class="dropdown-menu">
 									<li>
-										<a href="iphone.html">I-Phone</a>
+										<a href="riparazioni.php">Richiedi riparazione</a>
 									</li>
 									<li>
-										<a href="android.html">Android phone</a>
-									</li>
-									<li>
-										<a href="computer.html">Computer</a>
+										<a href="inforip.html">Info riparazioni</a>
 									</li>
 								</ul>
 								<!-- FINE Item menù riparazioni -->
@@ -98,23 +100,34 @@
 
 							<!-- Contatti -->
 							<li>
-								<a href="contatti.html">Contatti</a>
+								<a href="contatti.php">Contatti</a>
 							</li>
 							<!-- FINE Contatti -->
 
+							<!-- Verifica se admin o cliente -->
+							<li>
+								<?php
+									if(!$Admin){
+										echo"<a href=\"acquisti.php\">Acquisti</a>";
+									}
+									else{
+										echo"<a href=\"magazzino.php\">Magazzino</a>";
+									}
+								?>
+							</li>
+							<!-- FINE Verifica se admin o cliente -->
+
 							<!-- Accesso e registrazione-->
 							<li>
-								<a href="areautente.php">Area Utente</a>
+								<?php
+									if(!$Admin){
+										echo"<a href=\"utente.php\">Area Utente</a>";
+									}
+									else{
+										echo"<a href=\"admin.php\">Area Utente</a>";
+									}
+								?>
 							</li>
-
-							<li>
-								<form action="registrazione.php" class="form-inline">
-									<div class="form-group">
-										<button type="submit" class="btn btn-primary" id="registrazione">Registrati</button>
-									</div>
-								</form>
-							</li>
-							<!-- FINE Accesso e registrazione -->
 						</ul>
 						<!-- FINE Lista per il menù -->
 					</div><!-- /.nav-collapse -->

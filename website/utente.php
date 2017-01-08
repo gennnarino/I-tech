@@ -1,3 +1,6 @@
+<?php
+	session_start();
+?>
 <!DOCTYPE html>
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
@@ -49,7 +52,7 @@
                             <span class="icon-bar"></span>
 						</button>
 						<!-- Logo con reindirizzazione su home page -->
-						<a class="navbar-brand" href="home.html">I-Tech</a>
+						<a class="navbar-brand" href="home.php">I-Tech</a>
 					</div>
 					<!-- Barra dei menù-->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -83,13 +86,10 @@
 								<!-- Item menù riparazioni -->
 								<ul class="dropdown-menu">
 									<li>
-										<a href="iphone.html">I-Phone</a>
+										<a href="riparazioni.php">Richiedi riparazione</a>
 									</li>
 									<li>
-										<a href="android.html">Android phone</a>
-									</li>
-									<li>
-										<a href="computer.html">Computer</a>
+										<a href="inforip.html">Info riparazioni</a>
 									</li>
 								</ul>
 								<!-- FINE Item menù riparazioni -->
@@ -98,7 +98,7 @@
 
 							<!-- Contatti -->
 							<li>
-								<a href="contatti.html">Contatti</a>
+								<a href="contatti.php">Contatti</a>
 							</li>
 							<!-- FINE Contatti -->
 
@@ -126,7 +126,11 @@
 			<table class="table">
     			<tr>		
     				<th>CF</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $_SESSION["autorizzato"];
+    			  		?>
+    			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		

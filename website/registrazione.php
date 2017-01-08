@@ -49,7 +49,7 @@
                             <span class="icon-bar"></span>
 						</button>
 						<!-- Logo con reindirizzazione su home page -->
-						<a class="navbar-brand" href="home.html">I-Tech</a>
+						<a class="navbar-brand" href="index.php">I-Tech</a>
 					</div>
 					<!-- Barra dei menù-->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -83,13 +83,10 @@
 								<!-- Item menù riparazioni -->
 								<ul class="dropdown-menu">
 									<li>
-										<a href="iphone.html">I-Phone</a>
+										<a href="riparazioni.php">Richiedi riparazione</a>
 									</li>
 									<li>
-										<a href="android.html">Android phone</a>
-									</li>
-									<li>
-										<a href="computer.html">Computer</a>
+										<a href="inforip.html">Info riparazioni</a>
 									</li>
 								</ul>
 								<!-- FINE Item menù riparazioni -->
@@ -98,7 +95,7 @@
 
 							<!-- Contatti -->
 							<li>
-								<a href="contatti.html">Contatti</a>
+								<a href="contatti.php">Contatti</a>
 							</li>
 							<!-- FINE Contatti -->
 
@@ -113,7 +110,7 @@
   											<input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
   										</div>
   										<div class="form-group">
-  											<button type="submit" class="btn btn-default" id="entra">Login</button>
+  											<button type="submit" class="btn btn-primary" id="entra">Login</button>
   										</div>
 									</fieldset>
 								</form>
@@ -135,7 +132,7 @@
 				<div class="col-sm-2">
 				</div>
 				<div class="col-sm-9">
-					<form method="post" action="login.php" class="col-sm-11" id="form-reg">
+					<form method="post" action="regcontrol.php" class="col-sm-11" id="form-reg">
 						<fieldset name="registrazione">
 
 							<!-- Dati personali -->
@@ -186,21 +183,9 @@
 									</div>
 								</div>
 								<div class="form-group col-sm-11">
-									<label for="mail" class="col-sm-2 col-lg-2 control-label"></label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="mailv" placeholder="Reinserire la mail">
-									</div>
-								</div>
-								<div class="form-group col-sm-11">
 									<label for="pass" class="col-sm-2 col-lg-2 control-label">Password</label>
 									<div class="col-sm-9">
 										<input type="password" class="form-control" id="pass" name="pass" placeholder="Inserire la password">
-									</div>
-								</div>
-								<div class="form-group col-sm-11">
-									<label for="passv" class="col-sm-2 col-lg-2 control-label"></label>
-									<div class="col-sm-9">
-										<input type="password" class="form-control" id="passv" placeholder="Reinserire la password">
 									</div>
 								</div>
 								<!-- FINE Dati di accesso -->
