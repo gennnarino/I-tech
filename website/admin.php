@@ -104,14 +104,12 @@
 
 							<!-- Accesso e registrazione-->
 							<li>
-								<a href="areautente.php">Area Utente</a>
-							</li>
-
-							<li>
-								<form action="registrazione.php" class="form-inline">
-									<div class="form-group">
-										<button type="submit" class="btn btn-primary" id="registrazione">Registrati</button>
-									</div>
+								<form method="post" action="logout.php" class="form-inline">
+									<fieldset>
+  										<div class="form-group">
+  											<button type="submit" class="btn btn-default" id="entra">Logout</button>
+  										</div>
+									</fieldset>
 								</form>
 							</li>
 							<!-- FINE Accesso e registrazione -->
@@ -119,112 +117,35 @@
 						<!-- FINE Lista per il menù -->
 					</div><!-- /.nav-collapse -->
 					<!-- FINE Barra dei menù-->
-					
-				</div>
+					</div>
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
 
 		<!-- Corpo del sito -->
-		<div class="container">
-			<!-- Messaggio di benvenuto -->
-			<section id="presentazione">
-				<div class="row">
-					<div class="col-sm-12">
-						<!-- Titolo messaggio -->
-						<h1 class="text-center">
-							<small>Benvenuto in I-Tech.it</small>
-						</h1>
-						<!-- FINE Titolo messaggio-->
-
-						<!-- Sottotitolo messaggio -->
-						<p class="lead text-center" style="color: #d3d3d3">Il portale italiano dedicato alla tecnologia</p>
-						<!-- FINE Sottotitolo messaggio -->
-					</div>
-				</div>
-			</section>
-			<!-- FINE Messaggio di benvenuto -->
-
-			<!-- Offerte in evidenza -->
-			<section id="offerte-in-evidenza">
-				<div class="row">
-
-					<!-- Prima offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Postazione pc completa</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta1.png" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima postazione pc completa per ufficio:<br>
-								- Monitor 19"<br>
-								- Processore Intel i3<br>
-								- HDD 1 TB<br>
-								- RAM 8 GB<br>
-								- Mouse e tastiera<br>
-								- Casse Logitech<br>
-								Prezzo 399,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Prima offerta-->
-
-					<!-- Seconda offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Postazione gaming</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta2.png" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima postazione pc completa per gamer:<br>
-								- Monitor 24"<br>
-								- Processore Intel i7<br>
-								- SSD 256 GB<br>
-								- HDD 1 TB<br>
-								- RAM 16 GB<br>
-								- Mouse e tastiera ProGame<br>
-								Prezzo 1199,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Seconda offerta-->
-
-					<!-- Terza offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Tablet Samsung</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta3.jpeg" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima tablet Samsung Tab 3:<br>
-								- Display 7"<br>
-								- WiFi<br>
-								- GPS<br>
-								- ROM 8 GB<br>
-								- RAM 2 GB<br>
-								- Cover protettiva in silicone<br>
-								Prezzo 199,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Terza offerta-->
-
-				</div>
-			</section>
-			<!-- FINE Offerte in evidenza -->
+		<div class="table-responsive">
+			<table class="table">
+    			<tr>		
+    				<th>ID</th>  	
+    			  	<td>php</td>
+    			  	<td></td>
+    			</tr>
+    			<tr>		
+    				<th>Mail</th>  	
+    			  	<td>php</td>
+    			  	<td>
+    			  		<button class="btn btn-primary" id="modmail">Modifica mail</button>
+    			  	</td>
+    			</tr>
+    			<tr>		
+    				<th>Password</th>  	
+    			  	<td>php</td>
+    			  	<td>
+    			  		<button class="btn btn-primary" id="modpass">Modifica password</button>
+    			  	</td>
+    			</tr>
+			</table>
 		</div>
-		<!-- FINE corpo del sito -->
+		<!-- FINE Corpo del sito -->
 
 		<!-- Footer -->
 		<footer>
