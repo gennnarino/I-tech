@@ -208,7 +208,7 @@
 								<!-- Button -->
 								<div class="form-group col-sm-11">
 									<div class="col-sm-9">
-										<button type="submit" class="btn btn-primary" id="conferma">Conferma</button>
+										<button type="submitclass" class="btn btn-primary" id="conferma">Conferma</button>
 									</div>
 								</div>
 								<!-- FINE Button -->
