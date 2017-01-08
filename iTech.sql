@@ -25,6 +25,7 @@ CREATE TABLE prodotto
   prezzo_OUT int(5) not null,
   quantita int(5),
   immagine varchar(15),
+  categoria varchar(10),
   descrizione varchar(200)
 );
 
