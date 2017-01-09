@@ -12,12 +12,11 @@ $pass=$_POST['pass'];
 
 
 $query = "INSERT INTO cliente (nome,cognome,indirizzo,cf,telefono,mail,pass)
- VALUES ('$nome', '$cognome','$indirizzo','$cf'',$telefono','$mail'','$pass')"; 
+ VALUES ('$nome', '$cognome','$indirizzo','$cf',$telefono,'$mail'','$pass')"; 
 
 if (mysql_query ($query, $db)) 
-   echo '<script language=javascript>document.location.href="index.php"</script>';
+   echo '<script language=javascript>document.location.href="utente.php"</script>';
 else 
-    echo 'NDO CULO';
- mysqli_close($connessione);
-
+   echo '<script language=javascript>document.location.href="index.php"</script>';
+ 
 ?>

@@ -1,24 +1,27 @@
 <?php
-	$nomehost = 'netflics.hopto.org'; 
-	$nomeuser = 'itech';
-	$password = 'itech';
-	$dbname = 'negozio';
+session_start(); 
 
-	$nomehostL = 'localhost'; 
-	$nomeuserL = 'root';
-	$passwordL = 'root';
-	$dbnameL = 'negozio';
-
-	
-
-	$mysqli = new mysqli($nomehostL,$nomeuserL,$passwordL,$dbnameL);
-    
-    if ($mysqli->connect_error) {
-    	die('Errore di connessione (' . $mysqli->connect_errno . ') '. $mysqli->connect_error);
-    } 
-	else {
-    	
-		}
-	}
-    
+include ("connessione.php");
+$user=$_POST['mail'];
+$pass=$_POST['pass'];
+$query = "SELECT * FROM admin WHERE email = '$user' AND passw = '$pass' ";
+$ris =mysqli_query($connessione,$query);
+if(mysqli_num_rows($ris) == 1){
+$_SESSION['username'] = $user;
+  $_SESSION['admin'] = true;
+  $_SESSION['loggato'] = true;
+echo '<script language=javascript>document.location.href="index.php"</script>';  
+} else{
+$queryy = "SELECT * FROM cliente WHERE email = '$user' AND passw = '$pass' ";
+$riss =mysqli_query($connessione,$queryy);
+ if(mysqli_num_rows($riss) == 1){
+  $_SESSION['username'] = $user;
+  $_SESSION['admin'] = false;
+  $_SESSION['loggato'] = true;
+   echo '<script language=javascript>document.location.href="index.php"</script>';  
+}else{
+   echo '<script language=javascript>document.location.href="index.php"</script>';
+}
+}
+mysqli_close($connessione);
 ?>
