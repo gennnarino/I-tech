@@ -4,6 +4,7 @@ session_start();
 include ("connessione.php");
 $user=$_POST['mail'];
 $pass=$_POST['pass'];
+
 $query = "SELECT * FROM admin WHERE email = '$user' AND passw = '$pass' ";
 $ris =mysqli_query($connessione,$query);
 if(mysqli_num_rows($ris) == 1){
@@ -18,10 +19,8 @@ $riss =mysqli_query($connessione,$queryy);
   $_SESSION['username'] = $user;
   $_SESSION['admin'] = false;
   $_SESSION['loggato'] = true;
-   echo '<script language=javascript>document.location.href="index.php"</script>';  
 }else{
-   echo '<script language=javascript>document.location.href="index.php"</script>';
+echo '<script language=javascript>document.location.href="index.php"</script>'; 
+ }
 }
-}
-mysqli_close($connessione);
 ?>
