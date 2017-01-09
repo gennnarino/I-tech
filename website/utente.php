@@ -68,10 +68,10 @@
 								<!-- Item menù prodotti -->
 								<ul class="dropdown-menu">
 									<li>
-										<a href="telefonia.html">Telefonia</a>
+										<a href="prodotti.php?prodotto=0">Telefonia</a>
 									</li>
 									<li>
-										<a href="computer.html">Computer</a>
+										<a href="prodotti.php?prodotto=1">Computer</a>
 									</li>
 								</ul>
 								<!-- FINE Item menù prodotti -->

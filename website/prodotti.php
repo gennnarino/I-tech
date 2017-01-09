@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
-
+<?php
+	$prod=$_REQUEST['prodotto'];
+?>
 <html>
 
 	<head>
@@ -32,7 +34,6 @@
 	</head>
 
 	<body>
-
 		<!-- Header e barra di navigazione -->
 		<header>
 			<!-- Barra di navigazione -->
@@ -65,10 +66,10 @@
 								<!-- Item menù prodotti -->
 								<ul class="dropdown-menu">
 									<li>
-										<a href="telefonia.html">Telefonia</a>
+										<a href="prodotti.php?prodotto=0">Telefonia</a>
 									</li>
 									<li>
-										<a href="computer.html">Computer</a>
+										<a href="prodotti.php?prodotto=1">Computer</a>
 									</li>
 								</ul>
 								<!-- FINE Item menù prodotti -->
@@ -127,12 +128,30 @@
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">Prodotti</h2> <!-- Modifica php per telefonia/computer -->
+			<h2 class="pull-left">
+				<?php
+					if($prod==0){
+							echo 'Telefonia';
+						}
+						else{
+							echo'Computer';
+						}
+				?>
+			</h2> 
 			<ul class="breadcrumb pull-right">
 				<li>
 					<a href="index.php">Home</a>
 				</li>
-				<li class="active">Prodotti</li> <!-- Modifica php per telefonia/computer -->
+				<li class="active">
+					<?php
+						if($prod==0){
+							echo 'Telefonia';
+						}
+						else{
+							echo'Computer';
+						}	
+					?>
+				</li> <!-- Modifica php per telefonia/computer -->
 			</ul>
 		</div>
 		<!-- FINE Barra testata di pagina -->
