@@ -4,8 +4,8 @@
 <?php
 	session_start();
 	$rip=$_GET['rip'];
-	$log=$_POST['loggato'];
-	$Admin=$_POST['admin'];
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
 ?>
 <html>
 
@@ -50,12 +50,42 @@
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">Riparazioni</h2> <!-- Modifica php per telefonia/computer -->
+			<h2 class="pull-left">
+				<?php
+					if($rip==0){
+						echo 'Richiedi riparazione';
+					}
+					else if($rip==1){
+						echo'Info riparazione';
+					}
+					else if($rip==2){
+						echo'Richieste di riparazione';
+					}
+					else if($rip==3){
+						echo'Le mie riparazioni';
+					}
+				?>
+			</h2> 
 			<ul class="breadcrumb pull-right">
 				<li>
 					<a href="index.php">Home</a>
 				</li>
-				<li class="active">Riparazioni</li> <!-- Modifica php per telefonia/computer -->
+				<li class="active">
+					<?php
+						if($rip==0){
+							echo 'Richiedi riparazione';
+						}
+						else if($rip==1){
+							echo'Info riparazione';
+						}
+						else if($rip==2){
+							echo'Richieste di riparazione';
+						}
+						else if($rip==3){
+							echo'Le mie riparazioni';
+						}	
+					?>
+				</li> 
 			</ul>
 		</div>
 		<!-- FINE Barra testata di pagina -->

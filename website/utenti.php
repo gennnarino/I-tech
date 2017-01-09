@@ -32,7 +32,7 @@
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
 
-
+        
 	</head>
 
 	<body>
@@ -50,42 +50,23 @@
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">Area utente</h2>
+			<h2 class="pull-left">Utenti</h2>
 			<ul class="breadcrumb pull-right">
 				<li>
 					<a href="index.php">Home</a>
 				</li>
-				<li class="active">Area utente</li>
+				<li class="active">Utenti</li>
 			</ul>
 		</div>
 		<!-- FINE Barra testata di pagina -->
 
-		<!-- Corpo del sito -->
-		<div class="table-responsive">
-			<table class="table">
-    			<tr>		
-    				<th>ID</th>  	
-    			  	<td>php</td>
-    			  	<td></td>
-    			</tr>
-    			<tr>		
-    				<th>Mail</th>  	
-    			  	<td>php</td>
-    			  	<td>
-    			  		<button class="btn btn-primary" id="modmail">Modifica mail</button>
-    			  	</td>
-    			</tr>
-    			<tr>		
-    				<th>Password</th>  	
-    			  	<td>php</td>
-    			  	<td>
-    			  		<button class="btn btn-primary" id="modpass">Modifica password</button>
-    			  	</td>
-    			</tr>
-			</table>
-		</div>
-		<!-- FINE Corpo del sito -->
+		<!-- Corpo -->
+		<!-- FINE Corpo -->
 
+		<div>
+			<p>
+			</p>
+		</div>
 		<!-- Footer -->
 		<footer>
 			<!-- Sezione footer UP -->
@@ -181,6 +162,7 @@
 				</div>
 			</section>
 			<!-- FINE Section Privacy -->
+
 		</footer>
 		<!-- FINE Footer -->
 
@@ -191,4 +173,4 @@
         <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
         <script src="assets/js/scripts.js"></script>
 	</body>
-<html>
+</html>

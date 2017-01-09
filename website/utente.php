@@ -4,8 +4,8 @@
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <?php
 	session_start();
-	$log=$_POST['loggato'];
-	$Admin=$_POST['admin'];
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
 	
 ?>
 
@@ -50,6 +50,18 @@
 			}
 		?>
 		<!-- FINE Menu -->
+
+		<!-- Barra testata di pagina -->
+		<div class="header-portfolio clearfix">
+			<h2 class="pull-left">Area utente</h2>
+			<ul class="breadcrumb pull-right">
+				<li>
+					<a href="index.php">Home</a>
+				</li>
+				<li class="active">Area utente</li>
+			</ul>
+		</div>
+		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo del sito -->
 		<div class="table-responsive">

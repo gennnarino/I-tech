@@ -124,6 +124,18 @@
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
 
+		<!-- Barra testata di pagina -->
+		<div class="header-portfolio clearfix">
+			<h2 class="pull-left">Registrazione</h2>
+			<ul class="breadcrumb pull-right">
+				<li>
+					<a href="index.php">Home</a>
+				</li>
+				<li class="active">Registrazione</li>
+			</ul>
+		</div>
+		<!-- FINE Barra testata di pagina -->
+
 		<!-- Corpo del sito -->
 		<div class="conteiner">	
 

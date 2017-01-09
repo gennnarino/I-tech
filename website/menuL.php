@@ -97,7 +97,7 @@
 							<?php
 								if($Admin){
 									echo"<li>
-											<a href=\"riparazioni.php?rip=2\">Utenti</a>
+											<a href=\"utenti.php?rip=2\">Utenti</a>
 										</li>";
 								}
 							?>

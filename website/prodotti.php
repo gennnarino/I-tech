@@ -4,8 +4,8 @@
 <?php
 	session_start();
 	$prod=$_GET['prodotto'];
-	$log=$_POST['loggato'];
-	$Admin=$_POST['admin'];
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
 ?>
 
 <html>
@@ -75,7 +75,7 @@
 							echo'Computer';
 						}	
 					?>
-				</li> <!-- Modifica php per telefonia/computer -->
+				</li> 
 			</ul>
 		</div>
 		<!-- FINE Barra testata di pagina -->
