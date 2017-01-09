@@ -1,10 +1,4 @@
 <?php
-
-/* DEBUG
-error_reporting(E_ALL | E_STRICT);
-ini_set(‘display_errors’, 1);
-*/
-
 session_start(); 
 include ("connessione.php");
 
@@ -26,5 +20,5 @@ if (mysqli_query ($connessione,$query)) {
 else {
     echo '<script language=javascript>document.location.href="registrazione.php"</script>';
    }
- 
+
 ?>
