@@ -1,3 +1,8 @@
+<?php
+	session_start();
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
+?>
 <!-- Header e barra di navigazione -->
 		<header>
 			<!-- Barra di navigazione -->
