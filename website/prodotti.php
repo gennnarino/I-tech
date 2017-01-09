@@ -7,6 +7,7 @@
 	$log=$_POST['loggato'];
 	$Admin=$_POST['admin'];
 ?>
+
 <html>
 
 	<head>
