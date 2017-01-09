@@ -75,7 +75,7 @@
 							echo'Computer';
 						}	
 					?>
-				</li> <!-- Modifica php per telefonia/computer -->
+				</li> 
 			</ul>
 		</div>
 		<!-- FINE Barra testata di pagina -->
