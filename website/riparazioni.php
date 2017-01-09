@@ -4,8 +4,8 @@
 <?php
 	session_start();
 	$rip=$_GET['rip'];
-	$log=$_POST['loggato'];
-	$Admin=$_POST['admin'];
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
 ?>
 <html>
 

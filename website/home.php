@@ -4,8 +4,8 @@
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <?php
 	session_start();
-	$log=$_POST['loggato'];
-	$Admin=$_POST['admin'];
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
 ?>
 <html>
 
