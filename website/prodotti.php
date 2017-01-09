@@ -28,7 +28,7 @@
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
 
-
+        
 	</head>
 
 	<body>
@@ -49,7 +49,7 @@
                             <span class="icon-bar"></span>
 						</button>
 						<!-- Logo con reindirizzazione su home page -->
-						<a class="navbar-brand" href="home.html">I-Tech</a>
+						<a class="navbar-brand" href="index.php">I-Tech</a>
 					</div>
 					<!-- Barra dei menù-->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -83,13 +83,10 @@
 								<!-- Item menù riparazioni -->
 								<ul class="dropdown-menu">
 									<li>
-										<a href="iphone.html">I-Phone</a>
+										<a href="riparazioni.php">Richiedi riparazione</a>
 									</li>
 									<li>
-										<a href="android.html">Android phone</a>
-									</li>
-									<li>
-										<a href="computer.html">Computer</a>
+										<a href="inforip.html">Info riparazioni</a>
 									</li>
 								</ul>
 								<!-- FINE Item menù riparazioni -->
@@ -98,145 +95,53 @@
 
 							<!-- Contatti -->
 							<li>
-								<a href="contatti.html">Contatti</a>
+								<a href="contatti.php">Contatti</a>
 							</li>
 							<!-- FINE Contatti -->
 
-							<!-- Accesso e registrazione-->
+							<!-- Accedi -->
 							<li>
-								<form method="post" action="login.php" class="form-inline">
-									<fieldset>
-										<div class="form-group">
-											<input type="text" class="form-control" id="mail" name="mail" placeholder="Username">
-										</div>
-										<div class="form-group">
-  											<input type="password" class="form-control" id="pass" name="pass" placeholder="Password">
-  										</div>
-  										<div class="form-group">
-  											<button type="submit" class="btn btn-primary" id="entra">Login</button>
-  										</div>
-									</fieldset>
-								</form>
+								<li>
+  									<input type="text"  class="form-control" id="username" placeholder="Username">
+								</li>
+								<li>
+  									<input type="password"  class="form-control" id="pass" placeholder="Password">
+								</li>
+								<li>
+									<button type="submit" class="btn btn-default" id="entra">Entra</button>
+								</li>
+								<li>
+									<button type="submit" class="btn btn-default" id="reg">Registrati</button>
+								</li>
 							</li>
+							<!-- FINE Accedi-->
 
-							<li>
-								<form action="registrazione.php" class="form-inline">
-									<div class="form-group">
-										<button type="submit" class="btn btn-primary" id="registrazione">Registrati</button>
-									</div>
-								</form>
-							</li>
-							<!-- FINE Accesso e registrazione -->
 						</ul>
 						<!-- FINE Lista per il menù -->
 					</div><!-- /.nav-collapse -->
 					<!-- FINE Barra dei menù-->
-					
 				</div>
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
 
-		<!-- Corpo del sito -->
-		<div class="container">
-			<!-- Messaggio di benvenuto -->
-			<section id="presentazione">
-				<div class="row">
-					<div class="col-sm-12">
-						<!-- Titolo messaggio -->
-						<h1 class="text-center">
-							<small>Benvenuto in I-Tech.it</small>
-						</h1>
-						<!-- FINE Titolo messaggio-->
 
-						<!-- Sottotitolo messaggio -->
-						<p class="lead text-center" style="color: #d3d3d3">Il portale italiano dedicato alla tecnologia</p>
-						<!-- FINE Sottotitolo messaggio -->
-					</div>
-				</div>
-			</section>
-			<!-- FINE Messaggio di benvenuto -->
-
-			<!-- Offerte in evidenza -->
-			<section id="offerte-in-evidenza">
-				<div class="row">
-
-					<!-- Prima offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Postazione pc completa</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta1.png" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima postazione pc completa per ufficio:<br>
-								- Monitor 19"<br>
-								- Processore Intel i3<br>
-								- HDD 1 TB<br>
-								- RAM 8 GB<br>
-								- Mouse e tastiera<br>
-								- Casse Logitech<br>
-								Prezzo 399,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Prima offerta-->
-
-					<!-- Seconda offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Postazione gaming</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta2.png" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima postazione pc completa per gamer:<br>
-								- Monitor 24"<br>
-								- Processore Intel i7<br>
-								- SSD 256 GB<br>
-								- HDD 1 TB<br>
-								- RAM 16 GB<br>
-								- Mouse e tastiera ProGame<br>
-								Prezzo 1199,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Seconda offerta-->
-
-					<!-- Terza offerta -->
-					<div class="col-sm-4">
-						<div class="box-offerta">
-							<h3>Tablet Samsung</h3>
-							<p class="text-center">
-								<img src="assets/img/offerta3.jpeg" class="img-thumbnail img-responsive">
-							</p>
-							<p>
-								Ottima tablet Samsung Tab 3:<br>
-								- Display 7"<br>
-								- WiFi<br>
-								- GPS<br>
-								- ROM 8 GB<br>
-								- RAM 2 GB<br>
-								- Cover protettiva in silicone<br>
-								Prezzo 199,00€
-							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
-						</div>
-					</div>
-					<!-- FINE Terza offerta-->
-
-				</div>
-			</section>
-			<!-- FINE Offerte in evidenza -->
+		<!-- Barra testata di pagina -->
+		<div class="header-portfolio clearfix">
+			<h2 class="pull-left">Prodotti</h2> <!-- Modifica php per telefonia/computer -->
+			<ul class="breadcrumb pull-right">
+				<li>
+					<a href="index.php">Home</a>
+				</li>
+				<li class="active">Prodotti</li> <!-- Modifica php per telefonia/computer -->
+			</ul>
 		</div>
-		<!-- FINE corpo del sito -->
+		<!-- FINE Barra testata di pagina -->
+
+		<!-- Corpo pagina -->
+
+		Inserisci una serie di quadrati per i prodotti come nella home page, in php così si creano da soli a seconda dei prodotti
+
+		<!-- FINE Corpo pagina -->
 
 		<!-- Footer -->
 		<footer>
@@ -343,4 +248,5 @@
         <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
         <script src="assets/js/scripts.js"></script>
 	</body>
-<html>
+
+</html>

@@ -28,7 +28,6 @@
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
 
-        
 	</head>
 
 	<body>
@@ -49,7 +48,7 @@
                             <span class="icon-bar"></span>
 						</button>
 						<!-- Logo con reindirizzazione su home page -->
-						<a class="navbar-brand" href="home.html">I-Tech</a>
+						<a class="navbar-brand" href="index.php">I-Tech</a>
 					</div>
 					<!-- Barra dei menù-->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
@@ -83,13 +82,10 @@
 								<!-- Item menù riparazioni -->
 								<ul class="dropdown-menu">
 									<li>
-										<a href="iphone.html">I-Phone</a>
+										<a href="riparazioni.php">Richiedi riparazione</a>
 									</li>
 									<li>
-										<a href="android.html">Android phone</a>
-									</li>
-									<li>
-										<a href="computer.html">Computer</a>
+										<a href="inforip.html">Info riparazioni</a>
 									</li>
 								</ul>
 								<!-- FINE Item menù riparazioni -->
@@ -98,7 +94,7 @@
 
 							<!-- Contatti -->
 							<li>
-								<a href="contatti.html">Contatti</a>
+								<a href="contatti.php">Contatti</a>
 							</li>
 							<!-- FINE Contatti -->
 
@@ -127,22 +123,21 @@
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
 
-
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">Prodotti</h2> <!-- Modifica php per telefonia/computer -->
+			<h2 class="pull-left">Riparazioni</h2> <!-- Modifica php per telefonia/computer -->
 			<ul class="breadcrumb pull-right">
 				<li>
-					<a href="home.html">Home</a>
+					<a href="index.php">Home</a>
 				</li>
-				<li class="active">Prodotti</li> <!-- Modifica php per telefonia/computer -->
+				<li class="active">Riparazioni</li> <!-- Modifica php per telefonia/computer -->
 			</ul>
 		</div>
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo pagina -->
 
-		Inserisci una serie di quadrati per i prodotti come nella home page, in php così si creano da soli a seconda dei prodotti
+		Inserisci un modulo per inviare mail come il modulo contatti
 
 		<!-- FINE Corpo pagina -->
 
