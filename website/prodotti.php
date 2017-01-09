@@ -2,7 +2,10 @@
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <?php
-	$prod=$_REQUEST['prodotto'];
+	session_start();
+	$prod=$_GET['prodotto'];
+	$log=$_POST['loggato'];
+	$Admin=$_POST['admin'];
 ?>
 <html>
 
@@ -34,97 +37,17 @@
 	</head>
 
 	<body>
-		<!-- Header e barra di navigazione -->
-		<header>
-			<!-- Barra di navigazione -->
-			<nav class="navbar navbar-default">
-				<!-- Container barra di navigazione -->
-				<div class="container">
-					<!-- div contenente titolo e menù-->
-					<div class="navbar-header">
-						<!-- Pulsante per la visualizzazione del menù mobile-->
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-							<!-- layout menù mobile -->
-							<span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-						</button>
-						<!-- Logo con reindirizzazione su home page -->
-						<a class="navbar-brand" href="index.php">I-Tech</a>
-					</div>
-					<!-- Barra dei menù-->
-					<div class="collapse navbar-collapse navbar-responsive-collapse">
-
-						<!-- Lista per il menù -->
-						<ul class="nav navbar-nav">
-
-							<!-- Menù prodotti -->
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									Prodotti<span class="caret"></span>
-								</a>
-								<!-- Item menù prodotti -->
-								<ul class="dropdown-menu">
-									<li>
-										<a href="prodotti.php?prodotto=0">Telefonia</a>
-									</li>
-									<li>
-										<a href="prodotti.php?prodotto=1">Computer</a>
-									</li>
-								</ul>
-								<!-- FINE Item menù prodotti -->
-							</li>
-							<!-- FINE Menù prodotti-->
-
-							<!-- Menù riparazioni -->
-							<li class="dropdown">	
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									Riparazioni<span class="caret"></span>
-								</a>
-								<!-- Item menù riparazioni -->
-								<ul class="dropdown-menu">
-									<li>
-										<a href="riparazioni.php">Richiedi riparazione</a>
-									</li>
-									<li>
-										<a href="inforip.html">Info riparazioni</a>
-									</li>
-								</ul>
-								<!-- FINE Item menù riparazioni -->
-							</li>
-							<!-- FINE Menù riparazioni -->
-
-							<!-- Contatti -->
-							<li>
-								<a href="contatti.php">Contatti</a>
-							</li>
-							<!-- FINE Contatti -->
-
-							<!-- Accedi -->
-							<li>
-								<li>
-  									<input type="text"  class="form-control" id="username" placeholder="Username">
-								</li>
-								<li>
-  									<input type="password"  class="form-control" id="pass" placeholder="Password">
-								</li>
-								<li>
-									<button type="submit" class="btn btn-default" id="entra">Entra</button>
-								</li>
-								<li>
-									<button type="submit" class="btn btn-default" id="reg">Registrati</button>
-								</li>
-							</li>
-							<!-- FINE Accedi-->
-
-						</ul>
-						<!-- FINE Lista per il menù -->
-					</div><!-- /.nav-collapse -->
-					<!-- FINE Barra dei menù-->
-				</div>
-			</nav><!-- /.navbar -->
-		</header><!-- /header -->
-
+		
+		<!-- Menu -->
+		<?php
+			if($log){
+				include "menuL.php";
+			}
+			else{
+				include "menuNL.php";
+			}
+		?>
+		<!-- FINE Menu -->
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
