@@ -22,5 +22,22 @@ $riss =mysqli_query($connessione,$queryy);
 }else{
 echo '<script language=javascript>document.location.href="index.php"</script>'; 
  }
+
+	$_SESSION['username'] = $user;
+	$_SESSION['admin'] = true;
+	$_SESSION['loggato'] = true;
+	echo '<script language=javascript>document.location.href="home.php"</script>';  
+} else{
+	$queryy = "SELECT * FROM cliente WHERE email = '$user' AND passw = '$pass' ";
+	$riss =mysqli_query($connessione,$queryy);
+	if(mysqli_num_rows($riss) == 1){
+ 		$_SESSION['username'] = $user;
+ 		$_SESSION['admin'] = false;
+		$_SESSION['loggato'] = true;
+		echo '<script language=javascript>document.location.href="home.php"</script>';  
+	}
+	else{
+		echo '<script language=javascript>document.location.href="index.php"</script>';
+	}
 }
 ?>
