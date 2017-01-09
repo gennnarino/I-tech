@@ -173,7 +173,18 @@
 										<input type="text" class="form-control" id="immagine" name="immagine" placeholder="Inserire l'immagine">
 									</div>
 								</div>
-                            
+                            	<div class="form-group col-sm-11">
+									<form enctype="multipart/form-data" action="upload.php" method="POST">
+  										<input type="hidden" name="MAX_FILE_SIZE" value="30000">
+  										<label for="userfile" class="col-sm-2 col-lg-2 control-label">Invia questo file: </label>
+  										
+  										<div class="col-sm-9">
+  											<input name="userfile" type="file">
+  											<input type="submit" class="btn btn-primary" id="invia_file" value="Invia File">
+  										</div>
+									</form>
+								</div>
+
 								<div class="form-group col-sm-11">
 									<label for="prezzo_IN" class="col-sm-2 col-lg-2 control-label">Prezzo Acquisto</label>
 									<div class="col-sm-9">
@@ -194,11 +205,6 @@
 									</div>
 								</div>
                             
-
-							
-							<!-- FINE Dati personali -->
-
-							<!-- Dati di accesso -->
 						
 
 								<!-- Button -->
