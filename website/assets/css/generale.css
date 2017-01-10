@@ -132,6 +132,60 @@ h1 small, .h1 small{
 	color:  #000000;
 }
 
+/* Flexslider */
+
+.flexslider {
+	margin: 0 0 30px; 
+	background: #f8f8f8; 
+	border: 0;
+	border-top: 3px solid #357ebd; 
+	position: relative; 
+	-webkit-border-radius: 0; 
+	-moz-border-radius: 0; 
+	-o-border-radius: 0; 
+	border-radius: 0; 
+}
+
+.flex-control-paging li a {
+	width: 12px; 
+	height: 12px;
+	padding: 2px;
+	background: #357ebd; 
+	cursor: pointer; 
+	text-indent: -9999px; 
+	-webkit-border-radius: 20px; 
+	-moz-border-radius: 20px; 
+	-o-border-radius: 20px; 
+	border-radius: 20px; 
+	box-shadow: none;
+}
+
+.slides li {
+	position: relative;
+}
+
+.flex-caption {
+	position: absolute;
+	top: 35%;
+	right: 8%;
+}
+
+.flex-caption-text span {
+	display: inline-block;
+	font-size: 34px;
+	font-weight: bold;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 2px 0;
+	padding: 0 15px;
+	background-color: rgba(53, 126, 189, 0.8);
+}
+
+@media screen and (max-width: 767px) {
+	.flex-control-nav, .flex-control-pager, .flex-caption {
+ 		display: none;
+ 	}
+}
+
 /* Offerte in evidenza */
 
 .box-offerta{
