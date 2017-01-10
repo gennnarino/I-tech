@@ -189,11 +189,11 @@ h1 small, .h1 small{
 /* Offerte in evidenza */
 
 .box-offerta{
-	margin-bottom: 10px;
+	margin-bottom: 20px;
 	padding: 15px;
- 	background-color: #86b6de;
+ 	background-color: #ffffff;
  	-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
-  	box-shadow: 0 2px 1px rgba(0, 0, 0, 0.25);
+  	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.25);
 }
 
 .box-offerta h3, .box-offerta h4{
@@ -204,7 +204,7 @@ h1 small, .h1 small{
 
 .thumbnail, .img-thumbnail {
  	border-radius: 0;
-  	border: 1px solid #bbbbbb;
+  	border: 0px solid #bbbbbb;
 }
 
 /* Stili per sovrascrivere e modificare i bottoni standard di Bootstrap */

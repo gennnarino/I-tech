@@ -10,7 +10,9 @@
 					<!-- Prima offerta -->
 					<div class="col-sm-4">
 						<div class="box-offerta">
-							<h3>Postazione pc completa</h3>
+							<h3>
+								<strong>Postazione pc completa</stong>
+							</h3>
 							<p class="text-center">
 								<img src="assets/img/offerta1.png" class="img-thumbnail img-responsive">
 							</p>
@@ -24,10 +26,14 @@
 								- Casse Logitech<br>
 								Prezzo 399,00€
 							</p>
-							<!--if se sei loggato acquisti altrimenti nulla, inserire un carattere piu bello, togliere il blu-->
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
+							<!--iinserire un carattere piu bello, togliere il blu-->
+							<?php
+								if($log){
+										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
+													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
+												</a>'; 
+										}
+							?>
 						</div>
 					</div>
 					<!-- FINE Prima offerta-->
@@ -49,9 +55,13 @@
 								- Mouse e tastiera ProGame<br>
 								Prezzo 1199,00€
 							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
+							<?php
+								if($log){
+										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
+													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
+												</a>'; 
+										}
+							?>
 						</div>
 					</div>
 					<!-- FINE Seconda offerta-->
@@ -73,9 +83,13 @@
 								- Cover protettiva in silicone<br>
 								Prezzo 199,00€
 							</p>
-							<a href="#" class="btn btn-primary btn-large btn-block">
-								<span class="glyphicon glyphicon-hand-up"></span>   Scopri di più
-							</a>
+							<?php
+								if($log){
+										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
+													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
+												</a>'; 
+										}
+							?>
 						</div>
 					</div>
 					<!-- FINE Terza offerta-->
