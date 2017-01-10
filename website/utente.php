@@ -6,7 +6,7 @@
 	session_start();
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
-	
+	$cf=$_SESSION['codf'];
 ?>
 
 <html>
@@ -75,11 +75,7 @@
 			<table class="table">
     			<tr>		
     				<th>CF</th>  	
-    			  	<td>
-    			  		<?php
-    			  			echo $_SESSION["autorizzato"];
-    			  		?>
-    			  	</td>
+    			  	<td></td>
     			  	<td></td>
     			</tr>
     			<tr>		
