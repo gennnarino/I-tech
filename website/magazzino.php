@@ -53,7 +53,14 @@
 			<h2 class="pull-left">Magazzino</h2>
 			<ul class="breadcrumb pull-right">
 				<li>
-					<a href="index.php">Home</a>
+					<?php
+						if($log){
+							echo "<a href=\"home.php\">Home</a>";
+						}
+						else{
+							echo "<a href=\"index.php\">Home</a>";
+						}
+					?>
 				</li>
 				<li class="active">Magazzino</li>
 			</ul>
