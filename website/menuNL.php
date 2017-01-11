@@ -1,7 +1,7 @@
 		<!-- Header e barra di navigazione -->
 		<header>
 			<!-- Barra di navigazione -->
-			<nav class="navbar navbar-default">
+			<nav class="navbar navbar-default navbar-fixed-top">
 				<!-- Container barra di navigazione -->
 				<div class="container">
 					<!-- div contenente titolo e menù-->
@@ -94,3 +94,4 @@
 				</div>
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
+		<br><br>
