@@ -1,9 +1,3 @@
-<?php
-	session_start();
-	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];	
-?>
-
 <!-- Sezione slider con Flexslider -->
 <div class="row">
 	<div class="col-sm-12">
