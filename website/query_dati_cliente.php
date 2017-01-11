@@ -8,22 +8,20 @@
     echo $mail.'<br>';
     echo $pass.'<br>';
     $quanti = mysqli_num_rows($ris);
-
+    echo $quanti;
     if ($quanti == 0)
     {
         echo "Nessun record!";
     }
-    else
-    {
-        for($x=0; $x<$quanti; $x++)
-        {
-            $rs = mysqli_fetch_row($query);
-            $cf = $rs[0];
-            $nome = $rs[1];
-            $cognome = $rs[2];
-            $indirizzo = $rs[3];
-            $telefono = $rs[6];
-        }
+    else   {
+            $rs = mysqli_fetch_assoc($query);
+            $cf = $rs["cf"];
+        echo $cf;
+            $nome = $rs['nome'];
+            $cognome = $rs['cognome'];
+            $indirizzo = $rs['indirizzo'];
+            $telefono = $rs['telefono'];
+        
     }
     mysqli_close($connessione);
 ?>

@@ -57,7 +57,7 @@
 				<div class="col-sm-2">
 				</div>
 				<div class="col-sm-9">
-					<form method="post" action="q_InsPr.php" class="col-sm-11" id="form-reg">
+					<form method="post" action="q_InsPr.php" class="col-sm-11" enctype="multipart/form-data" >
 						<fieldset name="inserimento">
 
 							<!-- Dati personali -->
@@ -89,27 +89,8 @@
 									<div class="col-sm-9">
 										<input type="text" class="form-control" id="descrizione" name="descrizione" placeholder="Inserire la descrizione">
 									</div>
-								</div>
-                            
-                            
-								<div class="form-group col-sm-11">
-									<label for="immagine" class="col-sm-2 col-lg-2 control-label">Immagine</label>
-									<div class="col-sm-9">
-										<input type="text" class="form-control" id="immagine" name="immagine" placeholder="Inserire l'immagine">
-									</div>
-								</div>
-                            	<div class="form-group col-sm-11">
-									<form enctype="multipart/form-data" action="upload.php" method="POST">
-  										<input type="hidden" name="MAX_FILE_SIZE" value="30000">
-  										<label for="userfile" class="col-sm-2 col-lg-2 control-label">Invia questo file: </label>
-  										
-  										<div class="col-sm-9">
-  											<input name="userfile" type="file">
-  											<input type="submit" class="btn btn-primary" id="invia_file" value="Invia File">
-  										</div>
-									</form>
-								</div>
-
+                            </div>
+                                    
 								<div class="form-group col-sm-11">
 									<label for="prezzo_IN" class="col-sm-2 col-lg-2 control-label">Prezzo Acquisto</label>
 									<div class="col-sm-9">
@@ -117,6 +98,10 @@
 									</div>
 								</div>
 
+                            
+                            
+                            
+                            
 								<div class="form-group col-sm-11">
 									<label for="prezzo_OUT" class="col-sm-2 col-lg-2 control-label">Prezzo Vendita</label>
 									<div class="col-sm-9">
@@ -131,11 +116,24 @@
 								</div>
                             
 						
+                            
+                        
+                                    <div class="form-group col-sm-11">
+									
+  										<label for="userfile" class="col-sm-2 col-lg-2 control-label">Invia questo file: </label>
+  										
+  										<div class="col-sm-9">
+  											<input name="fileToUpload" type="file">
+                                            
+                                        </div>
+									</form>
+								</div>
+                            
 
 								<!-- Button -->
 								<div class="form-group col-sm-11">
 									<div class="col-sm-9">
-										<button type="submitclass" class="btn btn-primary" id="conferma">Conferma</button>
+				                  	<button type="submit" class="btn btn-primary" id="conferma">Conferma</button>
 									</div>
 								</div>
 								<!-- FINE Button -->
@@ -145,6 +143,8 @@
 			</div>
 			<!-- FINE Form registrazione -->
 
+            
+            
 		</div>
 		<!-- FINE Corpo del sito -->
 
