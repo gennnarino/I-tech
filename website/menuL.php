@@ -86,13 +86,24 @@
 							<!-- FINE Menù riparazioni -->
 
 							<!-- Verifica se admin o cliente -->
-							<li>
+							<li class="dropdown">
 								<?php
 									if(!$Admin){
 										echo"<a href=\"acquisti.php\">Acquisti</a>";
 									}
 									else{
-										echo"<a href=\"magazzino.php\">Magazzino</a>";
+										echo'<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+											Magazzino<span class="caret"></span>
+											</a>
+											<!-- Item menù prodotti -->
+											<ul class="dropdown-menu">
+												<li>
+													<a href="ins_Prodotto.php">Inserisci prodotti</a>
+												</li>
+												<li>
+													<a href="#">Visualizza magazzino</a>
+												</li>
+											</ul>';
 									}
 								?>
 							</li>
