@@ -28,7 +28,7 @@
 							</p>
 							<!--iinserire un carattere piu bello, togliere il blu-->
 							<?php
-								if($log){
+								if($log && !$Admin){
 										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
 													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
 												</a>'; 
@@ -56,7 +56,7 @@
 								Prezzo 1199,00€
 							</p>
 							<?php
-								if($log){
+								if($log && !$Admin){
 										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
 													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
 												</a>'; 
@@ -84,7 +84,7 @@
 								Prezzo 199,00€
 							</p>
 							<?php
-								if($log){
+								if($log && !$Admin){
 										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
 													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
 												</a>'; 

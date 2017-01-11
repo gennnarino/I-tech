@@ -52,16 +52,6 @@
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">
-				<?php
-					if($prod==0){
-							echo 'Telefonia';
-						}
-						else{
-							echo'Computer';
-						}
-				?>
-			</h2> 
 			<ul class="breadcrumb pull-right">
 				<li>
 					<?php
@@ -85,11 +75,28 @@
 				</li> 
 			</ul>
 		</div>
+		<section id="presentazione">
+			<div class="row">
+				<div class="col-sm-12">
+					<!-- Titolo messaggio -->
+					<h2 class="text-center">
+						<?php
+							if($prod==0){
+								echo 'Telefonia';
+							}
+							else{
+								echo'Computer';
+							}
+						?>
+					</h2> 
+				</div>
+			</div>
+		</section>
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo pagina -->
 
-		Inserisci una serie di quadrati per i prodotti come nella home page, in php così si creano da soli a seconda dei prodotti
+		<?php include("script_tabella_prodotti.php"); ?>
 
 		<!-- FINE Corpo pagina -->
 
