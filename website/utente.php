@@ -1,12 +1,16 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html>	
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <?php
 	session_start();
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
-	$cf=$_SESSION['codf'];
+	$pass=$_SESSION['password'];
+	$mail=$_SESSION['username'];
+
+	include ("query_dati_cliente.php");
+	echo'strunz';
 ?>
 
 <html>
@@ -75,43 +79,71 @@
 			<table class="table">
     			<tr>		
     				<th>CF</th>  	
-    			  	<td></td>
+    			  	<td>
+    			  		<?php
+    			  			echo $cf;
+    			  		?>
+    			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Nome</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $nome;
+    			  		?>
+    			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Cognome</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $cognome;
+    			  		?>
+    			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Indirizzo</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $indirizzo;
+    			  		?>
+    			  	</td>
     			  	<td>
     			  		<button class="btn btn-primary" id="modindirizzo">Modifica indirizzo</button>
     			  	</td>
     			</tr>
     			<tr>		
     				<th>Telefono</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $telefono;
+    			  		?>
+    			  	</td>
     			  	<td>
     			  		<button class="btn btn-primary" id="modtel">Modifica telefono</button>
     			  	</td>
     			</tr>
     			<tr>		
     				<th>Mail</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $mail;
+    			  		?>
+    			  	</td>
     			  	<td>
     			  		<button class="btn btn-primary" id="modmail">Modifica mail</button>
     			  	</td>
     			</tr>
     			<tr>		
     				<th>Password</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $pass;
+    			  		?>
+    			  	</td>
     			  	<td>
     			  		<button class="btn btn-primary" id="modpass">Modifica password</button>
     			  	</td>

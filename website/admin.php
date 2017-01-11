@@ -5,6 +5,8 @@
 	session_start();
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
+	$pass=$_SESSION['password'];
+	$mail=$_SESSION['username'];
 ?>
 <html>
 
@@ -72,19 +74,29 @@
 			<table class="table">
     			<tr>		
     				<th>ID</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		
+    			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Mail</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $mail;
+    			  		?>
+    			  	</td>
     			  	<td>
     			  		<button class="btn btn-primary" id="modmail">Modifica mail</button>
     			  	</td>
     			</tr>
     			<tr>		
     				<th>Password</th>  	
-    			  	<td>php</td>
+    			  	<td>
+    			  		<?php
+    			  			echo $pass;
+    			  		?>
+    			  	</td>
     			  	<td>
     			  		<button class="btn btn-primary" id="modpass">Modifica password</button>
     			  	</td>

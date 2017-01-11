@@ -10,6 +10,7 @@ if(mysqli_num_rows($ris) == 1){
 	$_SESSION['username'] = $user;
 	$_SESSION['admin'] = true;
 	$_SESSION['loggato'] = true;
+	$_SESSION['password'] = $pass;
 	echo '<script language=javascript>document.location.href="home.php"</script>';  
 } 
 else{
@@ -19,6 +20,7 @@ else{
  		$_SESSION['username'] = $user;
  		$_SESSION['admin'] = false;
 		$_SESSION['loggato'] = true;
+		$_SESSION['password'] = $pass;
 		echo '<script language=javascript>document.location.href="home.php"</script>';  
 	}
 	else{
