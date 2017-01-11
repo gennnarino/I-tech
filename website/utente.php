@@ -10,7 +10,6 @@
 	$mail=$_SESSION['username'];
 
 	include ("query_dati_cliente.php");
-	echo'strunz';
 ?>
 
 <html>

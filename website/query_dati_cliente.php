@@ -1,9 +1,10 @@
 <?  
     include ("connessione.php");
 
-    $query = "SELECT * FROM admin WHERE email = '$mail' AND passw = '$pass' ";
+    $query = "SELECT * FROM cliente WHERE email = '$mail' AND passw = '$pass' ";
 
     $ris =mysqli_query($connessione,$query);
+    echo $query.'<br>';
     echo $mail.'<br>';
     echo $pass.'<br>';
     $quanti = mysqli_num_rows($ris);
