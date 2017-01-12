@@ -50,22 +50,6 @@
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">
-				<?php
-					if($rip==0){
-						echo 'Richiedi riparazione';
-					}
-					else if($rip==1){
-						echo'Info riparazione';
-					}
-					else if($rip==2){
-						echo'Richieste di riparazione';
-					}
-					else if($rip==3){
-						echo'Le mie riparazioni';
-					}
-				?>
-			</h2> 
 			<ul class="breadcrumb pull-right">
 				<li>
 					<?php
@@ -95,6 +79,29 @@
 				</li> 
 			</ul>
 		</div>
+		<section id="presentazione">
+			<div class="row">
+				<div class="col-sm-12">
+					<!-- Titolo messaggio -->
+					<h2 class="text-center">
+						<?php
+						if($rip==0){
+							echo 'Richiedi riparazione';
+						}
+						else if($rip==1){
+							echo'Info riparazione';
+						}
+						else if($rip==2){
+							echo'Richieste di riparazione';
+						}
+						else if($rip==3){
+							echo'Le mie riparazioni';
+						}	
+					?>
+					</h2> 
+				</div>
+			</div>
+		</section>
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo pagina -->

@@ -89,7 +89,18 @@
 							<li class="dropdown">
 								<?php
 									if(!$Admin){
-										echo"<a href=\"acquisti.php\">Acquisti</a>";
+										echo	'<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+													Acquisti<span class="caret"></span>
+												</a>
+												<!-- Item menù prodotti -->
+												<ul class="dropdown-menu">
+													<li>
+														<a href="acquisti.php?acq=0">Carrello</a>
+													</li>
+													<li>
+														<a href="acquisti.php?acq=1">Storico acquisi</a>
+													</li>
+												</ul>';
 									}
 									else{
 										echo'<a href="#" class="dropdown-toggle" data-toggle="dropdown">

@@ -97,7 +97,9 @@
 		<!-- Corpo pagina -->
 
 		<?php include("script_tabella_prodotti.php"); ?>
-
+		<?php include("script_tabella_prodotti.php"); ?>
+		<?php include("script_tabella_prodotti.php"); ?>
+		<?php include("script_tabella_prodotti.php"); ?>
 		<!-- FINE Corpo pagina -->
 
 		<!-- Footer -->

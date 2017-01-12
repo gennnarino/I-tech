@@ -3,6 +3,7 @@
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <?php
 	session_start();
+	$acq=$_GET['acq'];
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
 ?>
@@ -50,7 +51,6 @@
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">Acquisti</h2>
 			<ul class="breadcrumb pull-right">
 				<li>
 					<?php
@@ -62,9 +62,35 @@
 						}
 					?>
 				</li>
-				<li class="active">Acquisti</li>
+				<li class="active">
+					<?php
+						if($acq==0){
+							echo 'Carrello';
+						}
+						else{
+							echo'Storico acquisti';
+						}	
+					?>
+				</li> 
 			</ul>
 		</div>
+		<section id="presentazione">
+			<div class="row">
+				<div class="col-sm-12">
+					<!-- Titolo messaggio -->
+					<h2 class="text-center">
+						<?php
+							if($acq==0){
+								echo 'Carrello';
+							}
+							else{
+								echo'Storico acquisti';
+							}
+						?>
+					</h2> 
+				</div>
+			</div>
+		</section>
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo -->
