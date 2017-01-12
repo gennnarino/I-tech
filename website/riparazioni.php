@@ -105,9 +105,20 @@
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo pagina -->
-
-		Inserisci un modulo per inviare mail come il modulo contatti
-
+		<?php
+			if($rip==0){
+				include"Richiedi_Riparazione.php";
+			}
+			else if($rip==1){
+				include"info_rip.php";
+			}
+			else if($rip==2){
+				echo'Richieste di riparazione';
+			}
+			else if($rip==3){
+				echo'Le mie riparazioni';
+			}	
+		?>
 		<!-- FINE Corpo pagina -->
 
 		<!-- Footer -->

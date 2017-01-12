@@ -96,10 +96,8 @@
 
 		<!-- Corpo pagina -->
 
-		<?php include("script_tabella_prodotti.php"); ?>
-		<?php include("script_tabella_prodotti.php"); ?>
-		<?php include("script_tabella_prodotti.php"); ?>
-		<?php include("script_tabella_prodotti.php"); ?>
+		<?php include("query_vis_prod.php"); ?>
+
 		<!-- FINE Corpo pagina -->
 
 		<!-- Footer -->
