@@ -17,28 +17,36 @@
     			<tr>		
     				<th>Marca</th>  	
     			  	<td>
-    			  		<!-- Inserire variabile marca -->
+    			  		<?php
+                            echo $marca;
+                        ?>
     			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Modello</th>  	
     			  	<td>
-    			  		<!-- Inserire variabile modello -->
+    			  		<?php
+                            echo $modello;
+                        ?>
     			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Prezzo</th>  	
     			  	<td>
-    			  		<!-- Inserire variabile prezzo -->
+    			  		<?php
+                            echo $prezzo_OUT;
+                        ?>
     			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Quantità</th>  	
     			  	<td>
-    			  		<!-- Inserire variabile quantità-->
+    			  		<?php
+                            echo $quantita;
+                        ?>
     			  	</td>
     			  	<td>
     			  		
@@ -50,7 +58,11 @@
     			</tr>
 			</table>
 
-            <p><!-- Inserire variabile descrizione --></p>
+            <p>
+                <?php
+                    echo $descrizione;
+                ?>
+            </p>
 		</div>
 		<div class="col-sm-1">
 		</div>
