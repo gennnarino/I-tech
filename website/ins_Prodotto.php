@@ -13,7 +13,9 @@
                             <div class="form-group col-sm-11">
 									<label for="categoria" class="col-sm-2 col-lg-2 control-label">Categoria</label>
 									<div class="col-sm-9">
-										<input type="text" class="form-control" id="categoria" name="categoria" placeholder="Inserire la categoria">
+										<label class="radio-inline"><input type="radio" name="categoria" value="Smartphone">Smartphone</label>
+										<label class="radio-inline"><input type="radio" name="categoria" value="Computer">Computer</label>
+										
 									</div>
 								</div>
                             
