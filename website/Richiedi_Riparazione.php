@@ -78,7 +78,7 @@
 						<h3 class="contatti-titoli">Modulo Richiesta Riparazione</h3>
 
 						
-						<form id="contatti-form" class="form-horizontal">
+						<form id="riparazione" class="form-horizontal" method="post" action="query_riparazione.php">
 
 							<!-- Messaggio -->
 							<div class="form-group">
