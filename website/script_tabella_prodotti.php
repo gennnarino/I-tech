@@ -18,7 +18,7 @@
     				<th>Marca</th>  	
     			  	<td>
                         <?php
-                            echo '$marca';
+                            echo $marca;
                         ?>
     			  	</td>
     			  	<td></td>
@@ -27,7 +27,7 @@
     				<th>Modello</th>  	
     			  	<td>
                         <?php
-                            echo '$prezzo_OUT';
+                            echo $prezzo_OUT;
                         ?>
     			  	</td>
     			  	<td></td>
@@ -36,7 +36,7 @@
     				<th>Prezzo</th>  	
     			  	<td>
                         <?php
-                            echo '$prezzo_OUT';
+                            echo $prezzo_OUT;
                         ?>
     			  	<td></td>
     			</tr>
@@ -44,7 +44,7 @@
     				<th>Quantità</th>  	
     			  	<td>
                         <?php
-                            echo '$quantita';
+                            echo $quantita;
                         ?>
     			  	</td>
     			  	<td>
@@ -59,7 +59,7 @@
 
             <p>
                 <?php
-                    echo '$descrizione';
+                    echo $descrizione;
                 ?>
             </p>
 		</div>
