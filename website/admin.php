@@ -73,13 +73,6 @@
 		<div class="table-responsive">
 			<table class="table">
     			<tr>		
-    				<th>ID</th>  	
-    			  	<td>
-    			  		
-    			  	</td>
-    			  	<td></td>
-    			</tr>
-    			<tr>		
     				<th>Mail</th>  	
     			  	<td>
     			  		<?php
