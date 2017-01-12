@@ -1,0 +1,28 @@
+<?  
+    include ("connessione.php");
+
+    $query = "SELECT * FROM prodotto";
+
+    $ris =mysqli_query($connessione,$query);
+    $quanti = mysqli_num_rows($ris);
+    if ($quanti == 0)
+    {
+        echo "Nessun record!";
+    }
+    else
+    {
+        while ($row = mysqli_fetch_assoc($ris)) {
+            $marca=$row["marca"];
+            $modello=$row["modello"];
+            $prezzo_OUT=$row["prezzo_OUT"];
+            $quantita=$row["quantita"];
+            $immagine=$row["immagine"];
+            $descrizione=$row["descrizione"];
+            $categoria=$row["categoria"];
+            if($quantita>0){
+                include("script_tabella_prodotti.php");
+            }
+        }       
+    }
+    mysqli_close($connessione);
+?>
