@@ -63,10 +63,10 @@ $quantita=$_POST['quantita'];
 
 if (mysqli_query ($connessione,$query)) {
     echo '<script language=javascript>alert("Inserito Correttamente")</script>';
-	echo '<script language=javascript>document.location.href="ins_Prodotto.php"</script>';
+	echo '<script language=javascript>document.location.href="magazzino.php?mag=1"</script>';
 }
 else {
     echo '<script language=javascript>alert("NON Inserito Correttamente")</script>';
-	echo '<script language=javascript>document.location.href="ins_Prodotto.php"</script>';
+	echo '<script language=javascript>document.location.href="magazzino.php?mag=0"</script>';
 }
 ?>

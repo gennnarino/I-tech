@@ -5,6 +5,7 @@
 	session_start();
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
+	$mag=$_GET['mag'];
 ?>
 <html>
 
@@ -68,6 +69,14 @@
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo -->
+		<?php
+			if($mag==0){
+				include "ins_prodotto.php";
+			}
+			else{
+				include "visualizza_mag.php";
+			}
+		?>
 		<!-- FINE Corpo -->
 
 		<div>

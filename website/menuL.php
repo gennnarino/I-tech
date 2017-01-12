@@ -109,10 +109,10 @@
 											<!-- Item menù prodotti -->
 											<ul class="dropdown-menu">
 												<li>
-													<a href="ins_Prodotto.php">Inserisci prodotti</a>
+													<a href="magazzino.php?mag=0">Inserisci prodotti</a>
 												</li>
 												<li>
-													<a href="#">Visualizza magazzino</a>
+													<a href="magazzino.php?mag=1">Visualizza magazzino</a>
 												</li>
 											</ul>';
 									}
