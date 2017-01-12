@@ -12,7 +12,7 @@ while($ciclo=mysqli_fetch_assoc($query)){
             $prezzo = $ciclo[prezzo];
             $stato = $ciclo[stato];
             $cliente = $ciclo[cliente];
-echo $id . $descrizione . $prezzo . $stato .$cliente . '<br>';
+            include("script_tabella_riparazioni.php");
     
 } 
 

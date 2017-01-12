@@ -139,10 +139,12 @@
 		<!-- Corpo del sito -->
 		<div class="conteiner">	
        
-		
 
-		</div>
-		<!-- FINE Corpo del sito -->
+		<!-- Corpo pagina -->
+
+		<?php include("query_visualizzariparazioni.php"); ?>
+
+		<!-- FINE Corpo pagina -->
 
 		<!-- Footer -->
 		<footer>
@@ -249,4 +251,5 @@
         <script src="assets/plugins/fancybox/jquery.fancybox.pack.js"></script>
         <script src="assets/js/scripts.js"></script>
 	</body>
-<html>
+
+</html>
