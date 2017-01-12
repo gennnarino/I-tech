@@ -44,7 +44,7 @@ if ($uploadOk == 0) {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
     echo '<script language=javascript>alert("Immagine inserita Correttamente")</script>';
     } else {
-    echo '<script language=javascript>alert("Immagine inserita Correttamente")</script>';
+    echo '<script language=javascript>alert("NON Immagine inserita Correttamente")</script>';
     }
 }
 
