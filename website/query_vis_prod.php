@@ -1,7 +1,15 @@
 <?  
     include ("connessione.php");
 
-    $query = "SELECT * FROM prodotto";
+    $scelta;
+    if($prod==0){
+        $scelta="Smartphone";
+    }
+    else{
+        $scelta="Computer";
+    }
+
+    $query = "SELECT * FROM prodotto WHERE categoria='$scelta'";
 
     $ris =mysqli_query($connessione,$query);
     $quanti = mysqli_num_rows($ris);
