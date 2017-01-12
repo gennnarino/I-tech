@@ -53,7 +53,7 @@
             $modello=$_POST['modello'];
             $marca=$_POST['marca'];
             $descrizione=$_POST['descrizione'];
-            $immagine=$_POST['fileToUpload'];
+            $immagine=$target_file;
             $prezzo_in=$_POST['prezzo_IN'];
             $prezzo_out=$_POST['prezzo_OUT'];
             $quantita=$_POST['quantita'];

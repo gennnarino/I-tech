@@ -4,7 +4,10 @@
 		<div class="col-sm-2">
 		</div>
 		<div class="col-sm-8">
-			<img class="img-responsive" src=""><!-- Inserire variabile con percorso img-->
+            <?php
+                echo '<img class="img-responsive" src="' .$immagine. '">';
+            ?>
+			
 		</div>
 		<div class="col-sm-2">
 		</div>
