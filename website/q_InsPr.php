@@ -3,7 +3,7 @@ session_start();
 
 include ("connessione.php");
 
-$target_dir = "/Users/gennnarino/I-tech/website";
+$target_dir = "website/imgProd";
 $target_file = basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 $imageFileType = pathinfo($target_file,PATHINFO_EXTENSION);
@@ -38,10 +38,22 @@ if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg
 }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
-    echo "Sorry, your file was not uploaded.";
+    echo '<script language=javascript>alert("NON Inserito Correttamente")</script>';
+       echo '<script language=javascript>document.location.href="magazzino.php?mag=0"</script>';
 // if everything is ok, try to upload file
 } else {
     if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+<<<<<<< HEAD
+        echo '<script language=javascript>alert("Immagine inserita Correttamente")</script>';
+        $categoria=$_POST['categoria'];
+        $modello=$_POST['modello'];
+        $marca=$_POST['marca'];
+        $descrizione=$_POST['descrizione'];
+        $immagine=$_POST['fileToUpload'];
+        $prezzo_in=$_POST['prezzo_IN'];
+        $prezzo_out=$_POST['prezzo_OUT'];
+        $quantita=$_POST['quantita'];
+=======
     echo '<script language=javascript>alert("Immagine inserita Correttamente")</script>';
     } else {
     echo '<script language=javascript>alert("NON Immagine inserita Correttamente")</script>';
@@ -57,16 +69,22 @@ $immagine=$_POST['fileToUpload'];
 $prezzo_in=$_POST['prezzo_IN'];
 $prezzo_out=$_POST['prezzo_OUT'];
 $quantita=$_POST['quantita'];
+>>>>>>> 53e79e807bfe60616956552f56b3f4996c1a7457
 
-    $query = "INSERT INTO prodotto (categoria,modello,marca,descrizione,immagine,prezzo_in,prezzo_out,quantita)
+        $query = "INSERT INTO prodotto (categoria,modello,marca,descrizione,immagine,prezzo_in,prezzo_out,quantita)
  VALUES ('$categoria', '$modello','$marca','$descrizione','$immagine',$prezzo_in,$prezzo_out,$quantita)"; 
 
-if (mysqli_query ($connessione,$query)) {
-    echo '<script language=javascript>alert("Inserito Correttamente")</script>';
-	echo '<script language=javascript>document.location.href="magazzino.php?mag=1"</script>';
+    if (mysqli_query ($connessione,$query)) {
+        echo '<script language=javascript>alert("Inserito Correttamente")</script>';
+	   echo '<script language=javascript>document.location.href="magazzino.php?mag=1"</script>';
+    }
+    else {
+        echo '<script language=javascript>alert("NON Inserito Correttamente")</script>';
+	   echo '<script language=javascript>document.location.href="magazzino.php?mag=0"</script>';
+    }
 }
 else {
-    echo '<script language=javascript>alert("NON Inserito Correttamente")</script>';
-	echo '<script language=javascript>document.location.href="magazzino.php?mag=0"</script>';
-}
+        echo '<script language=javascript>alert(" Non Immagine inserita Correttamente")</script>';
+    }
+    }
 ?>
