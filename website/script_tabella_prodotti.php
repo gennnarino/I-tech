@@ -55,6 +55,15 @@
     			  		
     			  	</td>
     			</tr>
+                <tr>
+                    <th>Acquista</th>   
+                    <td>
+                        
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
     			<tr>
                     <td></td>		
     				<th colspan="3" class="thdescription">Descrizione sintetica del prodotto</th>

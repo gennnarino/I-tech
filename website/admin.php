@@ -29,6 +29,7 @@
 		<link rel='stylesheet' href="assets/css/generale.css">
 		<!-- Modernizr -->
         <script src="assets/js/modernizr.custom.js"></script>
+        
         <!-- respond.js per IE8 -->
         <!--[if lt IE 9]>   
         <script src="assets/js/respond.min.js"></script>

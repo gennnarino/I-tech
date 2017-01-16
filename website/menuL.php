@@ -21,7 +21,7 @@
 						<!-- Logo con reindirizzazione su home page -->
 						<a class="navbar-brand" href="home.php">I-Tech</a>
 					</div>
-					<!-- Barra dei menù-->
+				<!-- Barra dei menù-->
 					<div class="collapse navbar-collapse navbar-responsive-collapse">
 
 						<!-- Lista per il menù -->
