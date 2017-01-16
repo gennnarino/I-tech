@@ -69,16 +69,26 @@
             
                     
 		</div>
-            <?php
-                include ("stato_richiesta.php");
-            ?>
+
 		<div class="col-sm-1">
             
 		</div>
           
        
+        <div class="row">
+            <div class="col-sm-2">
+            
+        </div>
         
-        
+        <div class="col-sm-10">
+            <?php
+                include ("stato_richiesta.php");
+            ?>
+            </div>
+<div class="col-sm-1">
+            
+        </div>
+        </div>
         <div class="row">
             <div class="table-responsive col-sm-12">
                 <table class="table">
