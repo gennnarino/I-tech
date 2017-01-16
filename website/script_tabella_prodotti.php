@@ -35,6 +35,20 @@
     			  	</td>
     			  	<td></td>
     			</tr>
+                <?php
+                    if($Admin){
+                        echo    '<tr>       
+                                    <th>Prezzo acquisto</th>   
+                                    <td>
+                                        '.$prezzo_IN.'
+                                    </td>
+                                    <td>
+                        
+                                    </td>
+                                </tr>';
+                    }
+                
+                ?>
     			<tr>		
     				<th>Prezzo</th>  	
     			  	<td>
