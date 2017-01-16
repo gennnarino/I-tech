@@ -74,7 +74,7 @@
 				include "ins_prodotto.php";
 			}
 			else{
-				include "visualizza_mag.php";
+				include "query_magazzino.php";
 			}
 		?>
 		<!-- FINE Corpo -->

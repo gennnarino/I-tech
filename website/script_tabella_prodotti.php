@@ -75,6 +75,15 @@
                     echo $descrizione;
                 ?>
             </p>
+            <?php
+                if($Admin){
+                    echo    '<p>
+                                '.$categoria.'
+                            </p>';
+                }
+                
+            ?>
+            
 		</div>
 		<div class="col-sm-1">
 		</div>
