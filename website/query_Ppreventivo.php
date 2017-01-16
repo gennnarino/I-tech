@@ -1,6 +1,6 @@
 <?php
-session_start();
-echo $_POST['prezzo'];
-echo $_POST['id'];
+	session_start();
+	echo $_POST['prezzo'];
+	echo $_POST['id'];
 
 ?>
