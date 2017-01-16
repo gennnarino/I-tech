@@ -15,7 +15,9 @@
     $quanti = mysqli_num_rows($ris);
     if ($quanti == 0)
     {
-        echo "Nessun record!";
+	  echo '<script language=javascript>alert("Nessun Prodotto in questa categoria")</script>';
+	echo '<script language=javascript>document.location.href="home.php"</script>';
+
     }
     else
     {
@@ -32,5 +34,6 @@
             }
         }       
     }
+
     mysqli_close($connessione);
 ?>
