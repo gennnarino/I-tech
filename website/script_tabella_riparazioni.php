@@ -56,7 +56,7 @@
     			</tr>
     			<tr>
                     <td></td>		
-    				<th colspan="3" class="thdescription">Descrizione  del Problema</th>
+    				<th colspan="3" class="thdescription">Descrizione del problema</th>
     			</tr>
 			</table>
 

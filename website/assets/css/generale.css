@@ -303,3 +303,9 @@ footer a, footer a:hover {
 .panel-default > .panel-footer + .panel-collapse .panel-body {
   	border-bottom-color: #dddddd;
 }
+
+.center{
+width: 150px;
+  margin: 40px auto;
+  
+}

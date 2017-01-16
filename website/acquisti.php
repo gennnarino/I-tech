@@ -94,14 +94,6 @@
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo -->
-		<?php
-			if($acq==0){
-				include "carrello.php";
-			}
-			else{
-				include "storico.php";
-			}
-		?>
 		<!-- FINE Corpo -->
 
 		<div>
