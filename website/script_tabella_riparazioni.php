@@ -69,9 +69,12 @@
             
                     
 		</div>
-              <input type="text" name="prezzo" >
-
-              <input type="submit" value="Submit">
+            <?php
+            if ($admin==true and $stato=="RICHIESTA"){
+            echo '<input type="text" name="prezzo" >';
+            echo '<input type="submit" value="Submit">';
+            }
+           ?>
 		<div class="col-sm-1">
             
 		</div>
