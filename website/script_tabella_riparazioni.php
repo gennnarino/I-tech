@@ -12,7 +12,7 @@
 	<div class="row">
 		<div class="col-sm-1">
 		</div>
-        <form method="post" action="query_Ppreventivo.php" >
+        
 		<div class="table-responsive col-sm-10">
 			<table class="table">
     			<tr>		
@@ -20,7 +20,7 @@
     			  	<td>
     			  		<?php
                        echo $id;
-                        echo '<input type="input" hidden="TRUE" name="id" value="' .$id.'">';
+                        
                         ?>
     			  	</td>
     			  	<td></td>
@@ -70,25 +70,14 @@
                     
 		</div>
             <?php
-            if ($admin==true and $stato=="RICHIESTA"){
-                
-            echo '<input type="text" name="prezzo" >';
-            echo '<input type="submit" value="Submit">';
-            }
-           ?>
-            
-            <?php
-            if ($admin==false and $stato=="ACCETTAZIONE"){
-            
-            echo '<input type="submit" value="Submit">';
-            }
-           ?>
+                include ("stato_richiesta.php");
+            ?>
 		<div class="col-sm-1">
             
 		</div>
           
        
-        </form>
+        
         
         <div class="row">
             <div class="table-responsive col-sm-12">

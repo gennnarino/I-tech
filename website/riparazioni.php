@@ -5,7 +5,8 @@
 	session_start();
 	$rip=$_GET['rip'];
 	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
+	$admin=$_SESSION['admin'];
+	$user=$_SESSION['username'];
 ?>
 <html>
 
@@ -113,10 +114,10 @@
 				include"info_rip.php";
 			}
 			else if($rip==2){
-				echo'Richieste di riparazione';
+				include"query_visualizzariparazioni.php";
 			}
 			else if($rip==3){
-				echo'Le mie riparazioni';
+				include"query_visualizzariparazioni.php";
 			}	
 		?>
 		<!-- FINE Corpo pagina -->

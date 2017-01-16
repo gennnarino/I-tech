@@ -1,7 +1,5 @@
 <?php
 session_start(); 
-$user="a";
-$admin=true;
 include ("connessione.php");
 if($admin==false){
 $queryy = "SELECT cf FROM cliente WHERE email = '$user' ";
