@@ -6,6 +6,7 @@
 	$acq=$_GET['acq'];
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
+	
 ?>
 <html>
 
@@ -96,7 +97,24 @@
 		<!-- Corpo -->
 		<?php
 			if($acq==0){
+				echo '<section id="tabella prodotti">';
 				include"script_tabella_carrello.php";
+				echo '</section>';
+				echo '<section>
+						<div class="row">
+							<div class="col-sm-1">
+							</div>
+							<div class="col-sm-10">
+								<form id="acquista-form" class="form-inline" method="POST" action="" enctype="text/plain">
+                    				<button type="submit" class="btn btn-success">
+                        				<span class="glyphicon glyphicon-shopping-cart"></span>   Finalizza acquisto
+                    				</button>
+                				</form>
+							</div>
+							<div class="col-sm-1">
+							</div>
+						</div>
+					  </section>';
 			}
 			else{
 				include"script_tabella_storico.php";

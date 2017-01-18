@@ -12,6 +12,7 @@
 		<div class="col-sm-2">
 		</div>
 	</div>
+
 	<div class="row">
 		<div class="col-sm-1">
 		</div>
@@ -69,48 +70,64 @@
     			  		
     			  	</td>
     			</tr>
-                <tr>
-                    <th>Acquista</th>   
-                    <td>
-                        
-                    </td>
-                    <td>
-                        
-                    </td>
-                </tr>
+                
     			<tr>
                     <td></td>		
     				<th colspan="3" class="thdescription">Descrizione sintetica del prodotto</th>
     			</tr>
 			</table>
-
+        
             <p>
                 <?php
                     echo $descrizione;
                 ?>
             </p>
-            <?php
-                if($Admin){
-                    echo    '<p>
-                                '.$categoria.'
-                            </p>';
-                }
-                
-            ?>
-            
-		</div>
-		<div class="col-sm-1">
-		</div>
-        <div class="row">
-            <div class="table-responsive col-sm-12">
-                <table class="table">
-                    <tr>        
-                        <th></th>      
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </table>
-            </div>
         </div>
-	</div>
+        <div class="col-sm-1">
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-1"></div>
+        
+        <?php
+            if($log && !$Admin){
+        ?>
+            <div class="col-sm-10">
+                <form id="carrello-form" class="form-inline" method="POST" action="prodotti.php">
+                    <input hidden="true" type="text" name="idP" value= <?php echo '"'.$idP.'"' ?> >
+                    <input type="text" class="form-control" name="inputQuantita" placeholder="1">
+                    <input hidden="true" type="text" name="prezzo" value= "<?php echo $prezzo_OUT ?>" >
+                    <button type="submit" class="btn btn-success">
+                        <span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
+                    </button>
+                </form>
+            </div>
+        <?php 
+            }
+        ?>
+            
+        <div class="col-sm-1"></div>
+    </div>
+
+    <?php
+        if($Admin){
+            echo    '<p>
+                        '.$categoria.'
+                    </p>';
+        }
+                
+    ?>
+            
+	<div class="row">
+        <div class="table-responsive col-sm-12">
+            <table class="table">
+                <tr>        
+                    <th></th>      
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
+    </div>
 </section>
