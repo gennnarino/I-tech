@@ -19,7 +19,6 @@
             $prezzo_OUT=$row["prezzo_OUT"];
             $prezzo_IN=$row["prezzo_IN"];
             $quantita=$row["quantita"];
-            $venduti=$row['venduti'];
             $immagine=$row["immagine"];
             $descrizione=$row["descrizione"];
             $categoria=$row["categoria"];

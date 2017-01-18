@@ -29,6 +29,7 @@
             $temp_quantita=$row["quantita"];
             $immagine=$row["immagine"];
             $descrizione=$row["descrizione"];
+            $quantita=$row['quantita'];
             $categoria=$row["categoria"];
             if($quantita>0){
                 include("script_tabella_prodotti.php");
