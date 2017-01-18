@@ -94,7 +94,14 @@
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo -->
-
+		<?php
+			if($acq==0){
+				include"script_tabella_carrello.php";
+			}
+			else{
+				include"script_tabella_storico.php";
+			}
+		?>
 		<!-- FINE Corpo -->
 
 		<div>
