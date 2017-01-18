@@ -4,6 +4,7 @@ session_start();
 include ("connessione.php");
 $user=$_POST['mail'];
 $pass=$_POST['pass'];
+$carrello = array();
 $query = "SELECT * FROM admin WHERE email = '$user' AND passw = '$pass' ";
 $ris =mysqli_query($connessione,$query);
 if(mysqli_num_rows($ris) == 1){
@@ -21,6 +22,7 @@ else{
  		$_SESSION['admin'] = false;
 		$_SESSION['loggato'] = true;
 		$_SESSION['password'] = $pass;
+		$_SESSION['carrello'] = $carrello;
 		echo '<script language=javascript>document.location.href="home.php"</script>';  
 	}
 	else{

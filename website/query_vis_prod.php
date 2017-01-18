@@ -22,6 +22,7 @@
     else
     {
         while ($row = mysqli_fetch_assoc($ris)) {
+            $idprod=$row['idP'];
             $marca=$row["marca"];
             $modello=$row["modello"];
             $prezzo_OUT=$row["prezzo_OUT"];

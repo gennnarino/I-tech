@@ -6,6 +6,13 @@
 	$prod=$_GET['prodotto'];
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
+	if($_POST['inputQuantita']!=NULL){
+		
+		$_POST['inputQuantita']=NULL;
+	}
+	else{
+		
+	}
 ?>
 
 <html>

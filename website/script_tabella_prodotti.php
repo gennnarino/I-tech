@@ -94,8 +94,8 @@
             if($log && !$Admin){
         ?>
             <div class="col-sm-10">
-                <form id="carrello-form" class="form-inline" method="POST" action="" enctype="text/plain">
-                    <input type="text" class="form-control" id="inputQuantita" placeholder="1">
+                <form id="carrello-form" class="form-inline" method="POST" action="prodotti.php">
+                    <input type="text" class="form-control" name="inputQuantita" placeholder="1">
                     <button type="submit" class="btn btn-success">
                         <span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
                     </button>
