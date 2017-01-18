@@ -16,13 +16,13 @@
     if ($quanti == 0)
     {
 	  echo '<script language=javascript>alert("Nessun Prodotto in questa categoria")</script>';
-	echo '<script language=javascript>document.location.href="home.php"</script>';
+	   echo '<script language=javascript>document.location.href="home.php"</script>';
 
     }
     else
     {
         while ($row = mysqli_fetch_assoc($ris)) {
-            $idprod=$row['idP'];
+            $idP=$row['idP'];
             $marca=$row["marca"];
             $modello=$row["modello"];
             $prezzo_OUT=$row["prezzo_OUT"];

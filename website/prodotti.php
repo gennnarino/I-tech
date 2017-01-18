@@ -7,7 +7,9 @@
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
 	if($_POST['inputQuantita']!=NULL){
-		
+		echo $_POST['idP'];
+		echo $_POST['inputQuantita'];
+		$_POST['idP']=NULL;
 		$_POST['inputQuantita']=NULL;
 	}
 	else{
