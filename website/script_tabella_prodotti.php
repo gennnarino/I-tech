@@ -97,6 +97,7 @@
                 <form id="carrello-form" class="form-inline" method="POST" action="prodotti.php">
                     <input hidden="true" type="text" name="idP" value= <?php echo '"'.$idP.'"' ?> >
                     <input type="text" class="form-control" name="inputQuantita" placeholder="1">
+                    <input hidden="true" type="text" name="prezzo" value= "<?php echo $prezzo_OUT ?>" >
                     <button type="submit" class="btn btn-success">
                         <span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
                     </button>
