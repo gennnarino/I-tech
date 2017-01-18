@@ -26,7 +26,7 @@
             $modello=$row["modello"];
             $prezzo_OUT=$row["prezzo_OUT"];
             $prezzo_IN=$row["prezzo_IN"];
-            $quantita=$row["quantita"];
+            $temp_quantita=$row["quantita"];
             $immagine=$row["immagine"];
             $descrizione=$row["descrizione"];
             $categoria=$row["categoria"];
