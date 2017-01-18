@@ -30,7 +30,7 @@
 							<?php
 								if($log && !$Admin){
 										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
-													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
+													<span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
 												</a>'; 
 										}
 							?>
@@ -58,7 +58,7 @@
 							<?php
 								if($log && !$Admin){
 										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
-													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
+													<span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
 												</a>'; 
 										}
 							?>
@@ -86,7 +86,7 @@
 							<?php
 								if($log && !$Admin){
 										echo 	'<a href="#" class="btn btn-primary btn-large btn-block">
-													<span class="glyphicon glyphicon-shopping-cart"></span>   Acquista
+													<span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
 												</a>'; 
 										}
 							?>
