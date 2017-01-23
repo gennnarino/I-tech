@@ -68,6 +68,9 @@
 		<!-- FINE Barra testata di pagina -->
 
 		<!-- Corpo -->
+		<?php
+			include "query_vis_utenti.php";
+		?>
 		<!-- FINE Corpo -->
 
 		<div>
@@ -75,7 +78,7 @@
 			</p>
 		</div>
 		<!-- Footer -->
-<?php
+	<?php
 		include "footer.php";
 	?>
 </html>
