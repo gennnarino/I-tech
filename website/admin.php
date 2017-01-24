@@ -81,7 +81,11 @@
     			  		?>
     			  	</td>
     			  	<td>
-    			  		<button class="btn btn-primary" id="modmail">Modifica mail</button>
+    			  		<form method="post" action="query_modifica_dati.php?mod=4">
+                            <input hidden="true" type="text" name="mail" value= <?php echo '"'.$mail.'"' ?> >
+                            <input type="text" name="nuovo_mailA" id="nuovo_mailA">
+                            <button class="btn btn-primary" id="modmailA">Modifica mail</button>
+                        </form>
     			  	</td>
     			</tr>
     			<tr>		
@@ -92,7 +96,11 @@
     			  		?>
     			  	</td>
     			  	<td>
-    			  		<button class="btn btn-primary" id="modpass">Modifica password</button>
+    			  		<form method="post" action="query_modifica_dati.php?mod=5">
+                            <input hidden="true" type="text" name="mail" value= <?php echo '"'.$mail.'"' ?> >
+                            <input type="text" name="nuovo_passA" id="nuovo_passA">
+                            <button class="btn btn-primary" id="modpassA">Modifica password</button>
+                        </form>
     			  	</td>
     			</tr>
 			</table>
