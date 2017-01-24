@@ -95,7 +95,7 @@
 												<!-- Item menù prodotti -->
 												<ul class="dropdown-menu">
 													<li>
-														<a href="acquisti.php?acq=1">Storico acquisi</a>
+														<a href="acquisti.php?acq=1">Storico acquisti</a>
 													</li>';
 													if($_SESSION['carrello']!=null){
 														echo '<li>
