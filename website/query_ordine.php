@@ -1,7 +1,5 @@
 <?php 
 	include ("connessione.php");
-	$prodotti=array();
-	$_SESSION['carrello']==$prodotti;
 
 	$user="a";
 	$queryy = "SELECT cf FROM cliente WHERE email = '$user' ";
@@ -34,7 +32,7 @@
 		$prezzo_tot=$prezzo_tot+$prezzo;
     	echo $prezzo_tot .'<br>';
 	}
-	$query = "UPDATE `ordine` SET `prezzo`='$prezzo_tot' WHERE ordine.idO='$id'"; 
+	$query = "UPDATE 'ordine' SET 'prezzo'='$prezzo_tot' WHERE ordine.idO='$id'"; 
 	$_SESSION['carrello']=$prodotti;
 	echo $prodotti[0];
 	$ris =mysqli_query($connessione,$query);
