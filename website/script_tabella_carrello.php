@@ -26,9 +26,9 @@
 							</td>
 						
 							<td colspan="3">
-								Nome: <?php echo $nome_prodotto; ?><br>
-								Prezzo: <?php echo $prezzo_prodotto; ?><br>
-								Quantità: <?php echo $quantita_prodotto; ?>
+								Nome: <?php echo $idP; ?><br>
+								Prezzo: <?php echo $prezzo; ?><br>
+								Quantità: <?php echo $quantita; ?>
 							</td>
 						
 							<td>
