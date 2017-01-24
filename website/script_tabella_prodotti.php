@@ -79,6 +79,7 @@
         
             <p>
                 <?php
+                session_start();
                     echo $descrizione;
                 ?>
             </p>
@@ -94,7 +95,7 @@
             if($log && !$Admin){
         ?>
             <div class="col-sm-10">
-                <form id="carrello-form" class="form-inline" method="POST" action="prodotti.php">
+                <form id="carrello-form" class="form-inline" method="POST" action="query_ordine.php">
                     <input hidden="true" type="text" name="idP" value= <?php echo '"'.$idP.'"' ?> >
                     <input type="text" class="form-control" name="inputQuantita" placeholder="1">
                     <input hidden="true" type="text" name="prezzo" value= "<?php echo $prezzo_OUT ?>" >
