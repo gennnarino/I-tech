@@ -111,8 +111,14 @@
     			  		?>
     			  	</td>
     			  	<td>
-    			  		<button class="btn btn-primary" id="modindirizzo">Modifica indirizzo</button>
+                        <form method="post" action="query_modifica_dati.php?mod=0">
+                            <input hidden="true" type="text" name="cf" value= <?php echo '"'.$cf.'"' ?> >
+                            <input type="text" name="nuovo_indirizzo" id="nuovo_indirizzo">
+                            <button class="btn btn-primary" id="modindirizzo">Modifica indirizzo</button>
+                        </form>
+    			  		
     			  	</td>
+
     			</tr>
     			<tr>		
     				<th>Telefono</th>  	
@@ -122,7 +128,11 @@
     			  		?>
     			  	</td>
     			  	<td>
-    			  		<button class="btn btn-primary" id="modtel">Modifica telefono</button>
+                        <form method="post" action="query_modifica_dati.php?mod=1">
+                            <input hidden="true" type="text" name="cf" value= <?php echo '"'.$cf.'"' ?> >
+                            <input type="text" name="nuovo_telefono" id="nuovo_telefono">
+                            <button class="btn btn-primary" id="modtel">Modifica telefono</button>
+                        </form>
     			  	</td>
     			</tr>
     			<tr>		
@@ -133,7 +143,11 @@
     			  		?>
     			  	</td>
     			  	<td>
-    			  		<button class="btn btn-primary" id="modmail">Modifica mail</button>
+                        <form method="post" action="query_modifica_dati.php?mod=2">
+                            <input hidden="true" type="text" name="cf" value= <?php echo '"'.$cf.'"' ?> >
+                            <input type="text" name="nuovo_mail" id="nuovo_mail">
+                            <button class="btn btn-primary" id="modmail">Modifica mail</button>
+                        </form>
     			  	</td>
     			</tr>
     			<tr>		
@@ -144,7 +158,11 @@
     			  		?>
     			  	</td>
     			  	<td>
-    			  		<button class="btn btn-primary" id="modpass">Modifica password</button>
+                        <form method="post" action="query_modifica_dati.php?mod=3">
+                            <input hidden="true" type="text" name="cf" value= <?php echo '"'.$cf.'"' ?> >
+                            <input type="text" name="nuovo_pass" id="nuovo_pass">
+                            <button class="btn btn-primary" id="modpass">Modifica password</button>
+                        </form>
     			  	</td>
     			</tr>
 			</table>
