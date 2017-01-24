@@ -98,7 +98,7 @@
 		<?php
 			if($acq==0){
 				echo '<section id="tabella prodotti">';
-				include"script_tabella_carrello.php";
+				include"visualizza_carrello.php";
 				echo '</section>';
 				echo '<section>
 						<div class="row">
