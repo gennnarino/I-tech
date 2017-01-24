@@ -2,6 +2,7 @@
       session_start(); 
       include ("connessione.php");
       if($admin==false){
+            
             $queryy = "SELECT cf FROM cliente WHERE email = '$user' ";
 	     $ris= mysqli_query ($connessione,$queryy);
 	     $rs = mysqli_fetch_assoc($ris);

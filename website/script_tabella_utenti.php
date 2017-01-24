@@ -48,9 +48,7 @@
                             echo $indirizzo;
                         ?>
     			  	</td>
-    			  	<td>
-    			  		
-    			  	</td>
+    			  	<td></td>
     			</tr>
     			<tr>     
                     <th>E-mail</th>      
@@ -59,9 +57,7 @@
                             echo $mail;
                         ?>
                     </td>
-                    <td>
-                        
-                    </td>
+                    <td></td>
                 </tr>
                 <tr>        
                     <th>Telefono</th>      
@@ -70,17 +66,11 @@
                             echo $telefono;
                         ?>
                     </td>
-                    <td>
-                        
-                    </td>
+                    <td></td>
                 </tr>
 			</table>
 		</div>
-
-		<div class="col-sm-1">
-            
-		</div>
-        
+		<div class="col-sm-1"></div>
         <div class="row">
             <div class="table-responsive col-sm-12">
                 <table class="table">
@@ -92,7 +82,5 @@
                 </table>
             </div>
         </div>
-	
     </div>
-    
 </section>
