@@ -1,7 +1,6 @@
     <?php 
  include ("connessione.php");
 $prodotti=array();
-$_SESSION['carrello']==$prodotti;
 
 $user="a";
 $queryy = "SELECT cf FROM cliente WHERE email = '$user' ";
