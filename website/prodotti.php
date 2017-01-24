@@ -34,6 +34,12 @@
         <!--[if lt IE 9]>   
         <script src="assets/js/respond.min.js"></script>
         <![endif]-->
+        <style TYPE="text/css">
+  			img.img-resize {
+  				width: 200px;
+  				height: auto;
+  			}
+		</style>
 
         
 	</head>
