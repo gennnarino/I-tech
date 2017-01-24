@@ -11,6 +11,5 @@
 	$_SESSION['carrello']=$carrello;
     $prezzo_totale=$prezzo_totale+$prezzo*$quantita;
     $_SESSION['prezzo_tot']=$prezzo_totale;
-	echo '<script language=javascript>alert("Prodotto aggiunto al carrello")</script>';
-header('Location: ' . $_SERVER['HTTP_REFERER']);
+    header('Location: ' . $_SERVER['HTTP_REFERER'])
 ?>
