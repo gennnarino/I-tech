@@ -124,7 +124,7 @@
 							<?php
 								if($Admin){
 									echo"<li>
-											<a href=\"utenti.php?rip=2\">Utenti</a>
+											<a href=\"utenti.php?\">Utenti</a>
 										</li>";
 								}
 							?>

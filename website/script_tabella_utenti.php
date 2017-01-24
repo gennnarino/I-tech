@@ -11,83 +11,75 @@
 	<div class="row">
 		<div class="col-sm-1">
 		</div>
-        
 		<div class="table-responsive col-sm-10">
 			<table class="table">
     			<tr>		
-    				<th>ID</th>  	
+    				<th>CF</th>  	
     			  	<td>
     			  		<?php
-                       echo $id;
+                       echo $cf;
                         
                         ?>
     			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
-    				<th>Prezzo</th>  	
+    				<th>Nome</th>  	
     			  	<td>
     			  		<?php
-                            echo $prezzo;
+                            echo $nome;
                         ?>
     			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
-    				<th>Stato</th>  	
+    				<th>Cognome</th>  	
     			  	<td>
     			  		<?php
-                            echo $stato;
+                            echo $cognome;
                         ?>
     			  	</td>
     			  	<td></td>
     			</tr>
     			<tr>		
-    				<th>Cliente</th>  	
+    				<th>Indirizzo</th>  	
     			  	<td>
     			  		<?php
-                            echo $cliente;
+                            echo $indirizzo;
                         ?>
     			  	</td>
     			  	<td>
     			  		
     			  	</td>
     			</tr>
-    			<tr>
-                    <td></td>		
-    				<th colspan="3" class="thdescription">Descrizione del problema</th>
-    			</tr>
+    			<tr>     
+                    <th>E-mail</th>      
+                    <td>
+                        <?php
+                            echo $mail;
+                        ?>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
+                <tr>        
+                    <th>Telefono</th>      
+                    <td>
+                        <?php
+                            echo $telefono;
+                        ?>
+                    </td>
+                    <td>
+                        
+                    </td>
+                </tr>
 			</table>
-
-            <p>
-                <?php
-                    echo $descrizione;
-                ?>
-                
-            </p>
-            
-                    
 		</div>
 
 		<div class="col-sm-1">
             
 		</div>
-          
-       
-        <div class="row">
-            <div class="col-sm-1">
-            
-            </div>
-        
-            <div class="col-sm-10">
-                <?php
-                    include ("stato_richiesta.php");
-                ?>
-            </div>
-            <div class="col-sm-1">
-            
-            </div>
-        </div>
         
         <div class="row">
             <div class="table-responsive col-sm-12">
