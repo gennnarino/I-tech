@@ -5,7 +5,7 @@
 		</div>
 		<div class="col-sm-8">
             <?php
-                echo '<img class="img-responsive" src="' .$immagine. '">';
+                echo '<img class="img-responsive img-resize" src="' .$immagine. '">';
             ?>
 			
 		</div>
@@ -79,7 +79,6 @@
         
             <p>
                 <?php
-                session_start();
                     echo $descrizione;
                 ?>
             </p>
@@ -95,10 +94,11 @@
             if($log && !$Admin){
         ?>
             <div class="col-sm-10">
-                <form id="carrello-form" class="form-inline" method="POST" action="query_ordine.php">
+                <form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
                     <input hidden="true" type="text" name="idP" value= <?php echo '"'.$idP.'"' ?> >
-                    <input type="text" class="form-control" name="inputQuantita" placeholder="1">
-                    <input hidden="true" type="text" name="prezzo" value= "<?php echo $prezzo_OUT ?>" >
+                    <input hidden="true" type="text" name="modello" value= <?php echo '"'.$modello.'"' ?> >
+                    <input type="text" class="form-control" name="quantita" placeholder="1">
+                    <input hidden="true" type="text" name="prezzo" value= <?php echo '"'.$prezzo_OUT.'"' ?> >
                     <button type="submit" class="btn btn-success">
                         <span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
                     </button>

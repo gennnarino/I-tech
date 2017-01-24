@@ -9,9 +9,9 @@
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-sm-1">
+		<div class="col-sm-2">
 		</div>
-		<div class="table-responsive col-sm-10">
+		<div class="table-responsive col-sm-7">
 			<table class="table">
     			<tr>		
     				<th>CF</th>  	
@@ -21,7 +21,6 @@
                         
                         ?>
     			  	</td>
-    			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Nome</th>  	
@@ -30,7 +29,6 @@
                             echo $nome;
                         ?>
     			  	</td>
-    			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Cognome</th>  	
@@ -39,7 +37,6 @@
                             echo $cognome;
                         ?>
     			  	</td>
-    			  	<td></td>
     			</tr>
     			<tr>		
     				<th>Indirizzo</th>  	
@@ -48,7 +45,6 @@
                             echo $indirizzo;
                         ?>
     			  	</td>
-    			  	<td></td>
     			</tr>
     			<tr>     
                     <th>E-mail</th>      
@@ -57,7 +53,6 @@
                             echo $mail;
                         ?>
                     </td>
-                    <td></td>
                 </tr>
                 <tr>        
                     <th>Telefono</th>      
@@ -65,12 +60,11 @@
                         <?php
                             echo $telefono;
                         ?>
-                    </td>
-                    <td></td>
+                    </td> 
                 </tr>
 			</table>
 		</div>
-		<div class="col-sm-1"></div>
+		<div class="col-sm-3"></div>
         <div class="row">
             <div class="table-responsive col-sm-12">
                 <table class="table">
