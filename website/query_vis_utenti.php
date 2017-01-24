@@ -1,8 +1,7 @@
 <?php
 	include ("connessione.php");
 
-	$query_u = mysqli_query($connessione,"SELECT * FROM cliente");	
-	echo $query_u;
+	$query_u = mysqli_query($connessione,"SELECT * FROM cliente");
 	while($ciclo=mysqli_fetch_assoc($query_u)){
         $cf = $ciclo[cf];
         $nome = $ciclo[nome];

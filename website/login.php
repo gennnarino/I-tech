@@ -4,7 +4,7 @@ session_start();
 include ("connessione.php");
 $user=$_POST['mail'];
 $pass=$_POST['pass'];
-$carrello = array();
+$carrello;
 $query = "SELECT * FROM admin WHERE email = '$user' AND passw = '$pass' ";
 $ris =mysqli_query($connessione,$query);
 if(mysqli_num_rows($ris) == 1){
