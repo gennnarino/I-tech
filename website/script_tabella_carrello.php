@@ -1,4 +1,5 @@
-<section id="tabella prodotti">
+<?php if($prezzo>0){echo 
+'<section id="tabella prodotti">
 	<div class="row">
 		<div class="col-sm-1">
 		</div>
@@ -19,22 +20,22 @@
 						<tr>
 							<td>
 								
-								<?php
-                					echo '<img class="img-rounded" src="'.$img_prodotto.'">';
-            					?>
+								
+                					<img class="img-rounded" src="'.$img_prodotto.'">
+            					
             				
 							</td>
 						
 							<td colspan="3">
-								Nome: <?php echo $idP; ?><br>
-								Prezzo: <?php echo $prezzo; ?><br>
-								Quantità: <?php echo $quantita; ?>
+								Nome: '.$idP.'<br>
+								Prezzo: '.$prezzo.'<br>
+								Quantità: '.$quantita.'
 							</td>
 						
 							<td>
 								<br>
 								<br>
-								Totale: <?php echo $prezzo_totale; ?>
+								Totale:'; $prezzo_totale=$prezzo*$quantita; echo ''.$prezzo_totale.'
 							</td>
 						</tr>
 					</tbody>
@@ -44,4 +45,5 @@
 		<div class="col-sm-1">
 		</div>
 	</div>
-</section>
+</section>';
+} ?>
