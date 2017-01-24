@@ -1,7 +1,8 @@
     <?php 
  include ("connessione.php");
+$prodotti=array();
+$_SESSION['carrello']==$prodotti;
 
-//$user=$_SESSION['username'];
 $user="a";
 $queryy = "SELECT cf FROM cliente WHERE email = '$user' ";
 $ris= mysqli_query ($connessione,$queryy);
@@ -14,10 +15,16 @@ $ris =mysqli_query($connessione,$query);
 $rs = mysqli_fetch_assoc($ris);
 $id=$rs['MAX(idO)'];
 
-$prodotti=[21123,3,4,31431,5,6];
+$idP=$_POST['idP'];
+$prezzo=$_POST['prezzo'];
+$quantità=$_POST['inputQuantita'];
 
+array_push($prodotti,$idP,$prezzo,$quantità);
 $conta = count($prodotti);
+echo $conta;
+
 $prezzo_tot=0;
+
 for($i=0;$i<$conta;$i=$i+3){
 $idP=$prodotti[$i];
 $quantita=$prodotti[$i+1];
@@ -28,7 +35,9 @@ $prezzo_tot=$prezzo_tot+$prezzo;
     echo $prezzo_tot .'<br>';
 }
 $query = "UPDATE `ordine` SET `prezzo`='$prezzo_tot' WHERE ordine.idO='$id'"; 
-echo $query;
+$_SESSION['carrello']=$prodotti;
+echo $prodotti[0];
 $ris =mysqli_query($connessione,$query);
+
 
 ?>

@@ -6,10 +6,6 @@
 	$prod=$_GET['prodotto'];
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
-	$carrello=$_SESSION['carrello'];
-		echo count($carrello);
-		array_push($carrello, $_POST['idP'],$_POST['inputQuantita'],$_POST['prezzo']);
-		echo count($carrello);
 	
 ?>
 
