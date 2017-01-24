@@ -34,7 +34,7 @@
 							<td>
 								<br>
 								<br>
-								Totale: <?php $tot=$prezzo_prodotto*$quantita_prodotto; echo $tot ?>
+								Totale: <?php echo $prezzo_totale; ?>
 							</td>
 						</tr>
 					</tbody>
