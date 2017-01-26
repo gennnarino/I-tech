@@ -25,7 +25,7 @@ $prodotti=explode(',',$carrello);
 $conta = count($prodotti);
 
 $i=1;
-do{ 
+ 
 	$i=$i-1;
 	$idP=$prodotti[$i];
 	$quantita=$prodotti[$i+2];
@@ -38,11 +38,10 @@ do{
 	$query ="INSERT INTO acquisto (idP,idO,quantita) VALUES ($idP,$id,$quantita)";
 	$ris =mysqli_query($connessione,$query);
     echo $query.'<br>';
-    echo $i.'<br>';
     $i=$i+5;
-}while($i<$conta);
 
-$carrello="";
-$_SESSION['carrello']=$carrello;
-echo '<script language=javascript>document.location.href="home.php"</script>';
+$_SESSION['carrello']=4;
+echo print_r($_SESSION);
+		echo '<script language=javascript>document.location.href="home.php"</script>';
+
 ?>

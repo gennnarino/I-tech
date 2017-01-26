@@ -1,5 +1,4 @@
 <?php
-	session_start();
 	$log=$_SESSION['loggato'];
 	$Admin=$_SESSION['admin'];
 ?>
@@ -97,11 +96,11 @@
 													<li>
 														<a href="acquisti.php?acq=1">Storico acquisti</a>
 													</li>';
-													if($_SESSION['carrello']!=null){
+												//	if($_SESSION['carrello']!=null){
 														echo '<li>
 																<a href="acquisti.php?acq=0">Carrello</a>
 															</li>';
-													}
+													//}
 										echo	'		</ul>';
 									}
 									else{
