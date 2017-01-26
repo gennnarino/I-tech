@@ -1,6 +1,5 @@
 
 <?php
-session_start();
 	if($stato=="RICHIESTA"){
 		if($admin){
 			echo'

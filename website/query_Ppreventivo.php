@@ -1,5 +1,5 @@
 <?php
-session_start();
+();
 include("connessione.php");
 $prezzo=$_POST['prezzo'];
 $id= $_POST['id'];

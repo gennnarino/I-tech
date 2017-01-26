@@ -2,11 +2,10 @@
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <?php
-	session_start();
 	$rip=$_GET['rip'];
-	$log=$_SESSION['loggato'];
-	$admin=$_SESSION['admin'];
-	$user=$_SESSION['username'];
+	$log=$_COOKIE['loggato'];
+	$admin=$_COOKIE['admin'];
+	$user=$_COOKIE['username'];
 ?>
 <html>
 

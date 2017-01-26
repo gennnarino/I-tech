@@ -1,12 +1,11 @@
 <?php 
-	session_start();
-	$carrello=$_SESSION['carrello'];
+	$carrello=$_COOKIE['carrello'];
 	$idP=$_POST['idP'];
 	$quantita=$_POST['quantita'];
 	$prezzo=$_POST['prezzo'];
 	$modello=$_POST['modello'];
 	$carrello=$carrello.$idP.','.$modello.','.$quantita.','.$prezzo.',';
-	$_SESSION['carrello']=$carrello;
+	setcoookie("carrello",$carrello);
     header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 ?>

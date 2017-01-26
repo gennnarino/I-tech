@@ -1,6 +1,6 @@
 <?php 
 
-$carrello=$_SESSION['carrello'];
+$carrello=$_COOKIE['carrello'];
 echo $carrello ;
 $prodotti=explode(',',$carrello);
 
