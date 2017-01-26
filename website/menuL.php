@@ -1,7 +1,7 @@
 <?php
-	session_start();
-	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
+	
+	$log=$_COOKIE['loggato'];
+	$Admin=$_COOKIE['admin'];
 ?>
 <!-- Header e barra di navigazione -->
 		<header>

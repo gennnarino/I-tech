@@ -2,11 +2,11 @@
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <?php
-	session_start();
-	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
-	$pass=$_SESSION['password'];
-	$mail=$_SESSION['username'];
+	
+	$log=$_COOKIE['loggato'];
+	$Admin=$_COOKIE['admin'];
+	$pass=$_COOKIE['password'];
+	$mail=$_COOKIE['username'];
 ?>
 <html>
 
