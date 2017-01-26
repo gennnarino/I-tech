@@ -1,6 +1,6 @@
 <?php
-	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
+	$log=$_COOKIE['loggato'];
+	$Admin=$_COOKIE['admin'];
 ?>
 <!-- Header e barra di navigazione -->
 		<header>
@@ -166,4 +166,3 @@
 				</div>
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
-		<br><br>
