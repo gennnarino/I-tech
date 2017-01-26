@@ -83,7 +83,7 @@
 								</div>
 
 								<div class="form-group col-sm-11">
-									<label for="cf" class="col-sm-2 col-lg-2 control-label">C.F.</label>
+									<label for="cf" class="col-sm-2 col-lg-2 control-label"><a href="http://www.codicefiscale.com/" target="_blank">C.F.</a></label>
 									<div class="col-sm-9">
 										<input type="text" class="form-control" id="cf" name="cf" placeholder="Inserire il codice fiscale">
 									</div>
