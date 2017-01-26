@@ -5,14 +5,13 @@ $utente=$_SESSION['username'];
 
 $query = "SELECT cf FROM cliente WHERE email = '$utente' ";
 echo $query.'<br>';
-
+$vuoto=',';
 $ris= mysqli_query ($connessione,$query);
 $rs = mysqli_fetch_assoc($ris);
 $cf = $rs['cf'];
 $prezzo_tot=$_POST['totale_ordine'];
-echo $prezzo_tot.'<br>';
 
-$query = "INSERT INTO ordine (cf,stato,prezzo,data) VALUES ('$cf', 'PAGATO','$prezzo_tot',NOW())"; 
+$query = "INSERT INTO ordine (cf,stato,prezzo,data) VALUES ('$cf', 'PAGATO',$prezzo_tot,NOW())"; 
 $ris =mysqli_query($connessione,$query);
 echo $query.'<br>';
 
@@ -25,20 +24,25 @@ $carrello=$_SESSION['carrello'];
 $prodotti=explode(',',$carrello);
 $conta = count($prodotti);
 
-
-for($i=0;$i<$conta;$i=$i+4){
+$i=1;
+do{ 
+	$i=$i-1;
 	$idP=$prodotti[$i];
 	$quantita=$prodotti[$i+2];
     
-	$query ="UPDATE prodotto SET quantita=quantita-'$quantita' WHERE idP='$idP'"; 
+	$query ="UPDATE prodotto SET quantita=quantita-$quantita WHERE idP=$idP"; 
 	$ris =mysqli_query($connessione,$query);
     echo $query.'<br>';
 
 
-	$query ="INSERT INTO acquisto (idP,idO,quantita) VALUES ('$idP',$id','$quantita')";
+	$query ="INSERT INTO acquisto (idP,idO,quantita) VALUES ($idP,$id,$quantita)";
 	$ris =mysqli_query($connessione,$query);
     echo $query.'<br>';
+    echo $i.'<br>';
+    $i=$i+5;
+}while($i<$conta);
 
-}
-
+$carrello="";
+$_SESSION['carrello']=$carrello;
+echo '<script language=javascript>document.location.href="home.php"</script>';
 ?>
