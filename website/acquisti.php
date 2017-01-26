@@ -105,7 +105,7 @@
 							<div class="col-sm-1">
 							</div>
 							<div class="col-sm-10">
-								<form id="acquista-form" class="form-inline" method="POST" action="query_ordine.php" enctype="text/plain">
+								<form id="acquista-form" class="form-inline" method="POST" action="query_ordine.php">
                     				<input hidden="true" type="text" name="totale_ordine" value="'.$totale_ordine.'">
                     				<p>Totale ordine '.$totale_ordine.' ,00 €</p>
                     				<button type="submit" class="btn btn-success">

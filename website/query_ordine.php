@@ -10,6 +10,8 @@ $ris= mysqli_query ($connessione,$query);
 $rs = mysqli_fetch_assoc($ris);
 $cf = $rs['cf'];
 $prezzo_tot=$_POST['totale_ordine'];
+echo $prezzo_tot.'<br>';
+
 $query = "INSERT INTO ordine (cf,stato,prezzo,data) VALUES ('$cf', 'PAGATO','$prezzo_tot',NOW())"; 
 $ris =mysqli_query($connessione,$query);
     echo $query.'<br>';
