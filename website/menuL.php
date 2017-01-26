@@ -1,6 +1,7 @@
 <?php
 	$log=$_COOKIE['loggato'];
 	$Admin=$_COOKIE['admin'];
+	$carrello=$_COOKIE['carrello'];
 ?>
 <!-- Header e barra di navigazione -->
 		<header>
@@ -96,11 +97,12 @@
 													<li>
 														<a href="acquisti.php?acq=1">Storico acquisti</a>
 													</li>';
-													if($_COOKIE['carrello']!=null){
+													if($carrello!=null){
 														echo '<li>
 																<a href="acquisti.php?acq=0">Carrello</a>
 															</li>';
-													//}
+														}
+													
 										echo	'		</ul>';
 									}
 									else{
