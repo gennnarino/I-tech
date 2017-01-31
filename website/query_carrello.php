@@ -5,8 +5,15 @@
 	$quantita=$_POST['quantita'];
 	$prezzo=$_POST['prezzo'];
 	$modello=$_POST['modello'];
-	$carrello=$carrello.$idP.','.$modello.','.$quantita.','.$prezzo.',';
-	$_SESSION['carrello']=$carrello;
-    header('Location: ' . $_SERVER['HTTP_REFERER']);
+	if(is_numeric($quantita)){
+		$carrello=$carrello.$idP.','.$modello.','.$quantita.','.$prezzo.',';
+		$_SESSION['carrello']=$carrello;
+    	header('Location: ' . $_SERVER['HTTP_REFERER']);
+	}
+	else{
+		echo '<script language=javascript>alert("Il valore immesso in quantità non è valido")</script>';
+		echo '<script language=javascript>document.location.href="prodotti.php"</script>';
+	}
+	
 
 ?>
