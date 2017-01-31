@@ -8,7 +8,7 @@ session_start();
 					<input type="input" hidden="TRUE" name="id" value="' .$id.'">
 					<input type="input" hidden="TRUE" name="stato" value="ACCETTAZIONE">
             		<input type="text" name="prezzo">
-            		<input type="submit" value="Submit">
+            		<input type="submit" value="Invia preventivo">
            		</form>';
 		}
 		else{
@@ -46,7 +46,7 @@ session_start();
 					<input type="input" hidden="TRUE" name="id" value="' .$id.'">
 					<input type="input" hidden="TRUE" name="prezzo" value="' .$prezzo.'">
 					<input type="input" hidden="TRUE" name="stato" value="RIPARAZIONE_IN_CORSO">
-            		<input type="submit" value="Submit">
+            		<input type="submit" value="Conferma riparazione in corso">
            		</form>';
 		}
 		else{
@@ -60,7 +60,7 @@ session_start();
 					<input type="input" hidden="TRUE" name="id" value="' .$id.'">
 					<input type="input" hidden="TRUE" name="prezzo" value="' .$prezzo.'">
 					<input type="input" hidden="TRUE" name="stato" value="RIPARATO">
-            		<input type="submit" value="Submit">
+            		<input type="submit" value="Conferma riparazione effettuata">
            		</form>';
 		}
 		else{
