@@ -1,4 +1,8 @@
-
+<?php
+	session_start();
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
+?>
 <!DOCTYPE html>
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
 	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->

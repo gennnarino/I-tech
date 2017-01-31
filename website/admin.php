@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
-	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
+
 <?php
 	session_start();
 	$log=$_SESSION['loggato'];
@@ -8,6 +6,9 @@
 	$pass=$_SESSION['password'];
 	$mail=$_SESSION['username'];
 ?>
+<!DOCTYPE html>
+	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->
+	<!--[if gt IE 8]><!--><html class="no-js"><!--<![endif]-->
 <html>
 
 	<head>

@@ -1,6 +1,7 @@
  <?php 
- include ("connessione.php");
+
 session_start();
+ include ("connessione.php");
 $utente=$_SESSION['username'];
 
 $query = "SELECT cf FROM cliente WHERE email = '$utente' ";
