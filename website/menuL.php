@@ -1,7 +1,7 @@
 <?php
-	$log=$_COOKIE['loggato'];
-	$Admin=$_COOKIE['admin'];
-	$carrello=$_COOKIE['carrello'];
+	session_start();
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];
 ?>
 <!-- Header e barra di navigazione -->
 		<header>
@@ -97,12 +97,11 @@
 													<li>
 														<a href="acquisti.php?acq=1">Storico acquisti</a>
 													</li>';
-													if($carrello!=null){
+													if($_SESSION['carrello']!=null){
 														echo '<li>
 																<a href="acquisti.php?acq=0">Carrello</a>
 															</li>';
-														}
-													
+													}
 										echo	'		</ul>';
 									}
 									else{
@@ -168,3 +167,4 @@
 				</div>
 			</nav><!-- /.navbar -->
 		</header><!-- /header -->
+		<br><br>

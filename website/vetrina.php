@@ -1,7 +1,7 @@
 <?php
-	
-    $log=$_COOKIE['loggato'];
-	$Admin=$_COOKIE['admin'];	
+	session_start();
+	$log=$_SESSION['loggato'];
+	$Admin=$_SESSION['admin'];	
 ?>
 <!-- Offerte in evidenza -->
 			<section id="offerte-in-evidenza">

@@ -1,6 +1,7 @@
  <?php 
  include ("connessione.php");
-$utente=$_COOKIE['username'];
+session_start();
+$utente=$_SESSION['username'];
 
 $query = "SELECT cf FROM cliente WHERE email = '$utente' ";
 echo $query.'<br>';
@@ -19,12 +20,12 @@ $ris =mysqli_query($connessione,$query);
 $rs = mysqli_fetch_assoc($ris);
 $id=$rs['MAX(idO)'];
 echo $query.'<br>';
-$carrello=$_COOKIE['carrello'];
+$carrello=$_SESSION['carrello'];
 $prodotti=explode(',',$carrello);
 $conta = count($prodotti);
 
 $i=1;
- 
+do{ 
 	$i=$i-1;
 	$idP=$prodotti[$i];
 	$quantita=$prodotti[$i+2];
@@ -37,9 +38,11 @@ $i=1;
 	$query ="INSERT INTO acquisto (idP,idO,quantita) VALUES ($idP,$id,$quantita)";
 	$ris =mysqli_query($connessione,$query);
     echo $query.'<br>';
+    echo $i.'<br>';
     $i=$i+5;
+}while($i<$conta);
 
-setcookie("carrello", null);
-		echo '<script language=javascript>document.location.href="home.php"</script>';
-
+$carrello="";
+$_SESSION['carrello']=$carrello;
+echo '<script language=javascript>document.location.href="home.php"</script>';
 ?>

@@ -1,6 +1,7 @@
 <?php
+	session_start();
 	include ("connessione.php");
-	$admin=$_COOKIE['admin'];
+	$admin=$_SESSION['admin'];
 	$to_do=$_GET['mod'];
 
 	if(!$admin){
