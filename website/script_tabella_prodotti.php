@@ -47,6 +47,15 @@
                         
                                     </td>
                                 </tr>';
+                         echo    '<tr>       
+                                    <th>Venduti</th>   
+                                    <td>
+                                        '.$venduti.'
+                                    </td>
+                                    <td>
+                        
+                                    </td>
+                                </tr>';
                     }
                 
                 ?>

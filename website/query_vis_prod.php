@@ -32,6 +32,7 @@
             $descrizione=$row["descrizione"];
             $quantita=$row['quantita'];
             $categoria=$row["categoria"];
+            $venduti=$row["venduti"];
             if($quantita>0){
                 include("script_tabella_prodotti.php");
             }

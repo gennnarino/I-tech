@@ -5,7 +5,6 @@ include ("connessione.php");
 include ("verifiche.php");
 $user=$_POST['mail'];
 $pass=$_POST['pass'];
-$carrello="";
 
 if($user!=null && $pass!=null){
 	if(chkEmail($user)){
@@ -26,7 +25,8 @@ if($user!=null && $pass!=null){
 		 		$_SESSION['admin'] = false;
 				$_SESSION['loggato'] = true;
 				$_SESSION['password'] = $pass;
-				$_SESSION['carrello'] = $carrello;
+		        setcookie("carrello", "", time()+3600);
+
 				echo '<script language=javascript>document.location.href="home.php"</script>';  
 			}
 			else{

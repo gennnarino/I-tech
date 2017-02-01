@@ -22,6 +22,8 @@
             $immagine=$row["immagine"];
             $descrizione=$row["descrizione"];
             $categoria=$row["categoria"];
+            $venduti=$row["venduti"];
+
             include("script_tabella_prodotti.php");
         }       
     }
