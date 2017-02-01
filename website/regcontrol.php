@@ -20,22 +20,20 @@ if($nome!=null && $cognome!=null && $indirizzo!=null && $cf!=null && $telefono!=
 	//if(codiceFiscale($cf)){
 		if(is_numeric($telefono)){
 			if(chkEmail($mail)){
-				if($count_pass>6){
-                    
-                      
-                    $query = "SELECT email , cf  FROM cliente WHERE  email = '$mail' OR cf='$cf'"; 
+				if($count_pass>6){  
+					$query = "SELECT email , cf  FROM cliente WHERE  email = '$mail' OR cf='$cf'"; 
                     $ris =mysqli_query($connessione,$query);
                     
                     if(mysqli_num_rows($ris) == 0){      
                  	
-					$query = "INSERT INTO cliente (nome,cognome,indirizzo,cf,telefono,email,passw)
-					VALUES ('$nome', '$cognome','$indirizzo','$cf',$telefono,'$mail','$pass')"; 
+						$query = "INSERT INTO cliente (nome,cognome,indirizzo,cf,telefono,email,passw) VALUES ('$nome', '$cognome','$indirizzo','$cf',$telefono,'$mail','$pass')"; 
 
-					if (mysqli_query ($connessione,$query)) {
-                        echo '<script language=javascript>alert("UTENTE REGISTRATO")</script>';
-						echo '<script language=javascript>document.location.href="index.php"</script>';
-					}
-                    } else {
+						if (mysqli_query ($connessione,$query)) {
+                        	echo '<script language=javascript>alert("UTENTE REGISTRATO")</script>';
+							echo '<script language=javascript>document.location.href="index.php"</script>';
+						}
+                    } 
+                    else {
                         echo '<script language=javascript>alert("UTENTE ESISTENTE")</script>';
     					echo '<script language=javascript>document.location.href="registrazione.php"</script>';
 	   				}
