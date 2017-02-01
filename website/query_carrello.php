@@ -10,7 +10,7 @@
 		if($n_prodotti>$quantita){
 			$carrello=$carrello.$idP.','.$modello.','.$quantita.','.$prezzo.',';
         	setcookie("carrello", $carrello);
-        	echo '<script language=javascript>alert("Prodotto inserito correttamente")</script>';
+        	//echo '<script language=javascript>alert("Prodotto inserito correttamente")</script>';
     		header('Location: ' . $_SERVER['HTTP_REFERER']);
 		}
 		else{

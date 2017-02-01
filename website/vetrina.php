@@ -81,7 +81,7 @@
 								<img src="assets/img/offerta3.jpeg" class="img-thumbnail img-responsive">
 							</p>
 							<p>
-								Ottima tablet Samsung Tab 3:<br>
+								Ottimo tablet Samsung Tab 3:<br>
 								- Display 7"<br>
 								- WiFi<br>
 								- GPS<br>
