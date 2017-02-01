@@ -2,7 +2,7 @@
 	session_start();
 	$rip=$_GET['rip'];
 	$log=$_SESSION['loggato'];
-	$admin=$_SESSION['admin'];
+	$Admin=$_SESSION['admin'];
 	$user=$_SESSION['username'];
 ?>
 <!DOCTYPE html>
