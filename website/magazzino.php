@@ -56,7 +56,17 @@
 
 		<!-- Barra testata di pagina -->
 		<div class="header-portfolio clearfix">
-			<h2 class="pull-left">Magazzino</h2>
+			<?php
+				if($mag==0){
+					echo '<h2 class="pull-left">Inserisci prodotto</h2>';
+				}
+				else if($mag==1){
+					echo '<h2 class="pull-left">Magazzino</h2>';
+					}
+				else{
+					echo '<h2 class="pull-left">Ordini</h2>';
+				}
+			?>
 			<ul class="breadcrumb pull-right">
 				<li>
 					<?php
@@ -68,7 +78,18 @@
 						}
 					?>
 				</li>
-				<li class="active">Magazzino</li>
+				<?php
+					if($mag==0){
+						echo '<li class="active">Inserisci prodotto</li>';
+					}
+					else if($mag==1){
+						echo '<li class="active">Magazzino</li>';
+					}
+					else{
+						echo '<li class="active">Ordini</li>';
+					}
+				?>
+				
 			</ul>
 		</div>
 		<!-- FINE Barra testata di pagina -->
@@ -78,8 +99,11 @@
 			if($mag==0){
 				include "ins_prodotto.php";
 			}
-			else{
+			else if($mag==1){
 				include "query_magazzino.php";
+			}
+			else{
+				include "query_visualizza_ordine.php";
 			}
 		?>
 		<!-- FINE Corpo -->

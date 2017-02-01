@@ -112,6 +112,9 @@
 												<li>
 													<a href="magazzino.php?mag=1">Visualizza magazzino</a>
 												</li>
+												<li>
+													<a href="magazzino.php?mag=2">Visualizza ordini</a>
+												</li>
 											</ul>';
 									}
 								?>
