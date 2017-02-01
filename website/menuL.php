@@ -93,7 +93,7 @@
 													<li>
 														<a href="acquisti.php?acq=1">Storico acquisti</a>
 													</li>';
-													if($_SESSION['carrello']!=null){
+													if($_COOKIE["carrello"]!=null){
 														echo '<li>
 																<a href="acquisti.php?acq=0">Carrello</a>
 															</li>';

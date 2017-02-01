@@ -1,5 +1,4 @@
-
-    <?php 
+<?php 
 /*
   creazione di un database con MySQLi.
   La prima operazione richiesta sarà quella relativa alla definizione

@@ -1,13 +1,14 @@
 <?php 
 	session_start();
-	$carrello=$_SESSION['carrello'];
+	$carrello=$_COOKIE["carrello"];
 	$idP=$_POST['idP'];
 	$quantita=$_POST['quantita'];
 	$prezzo=$_POST['prezzo'];
 	$modello=$_POST['modello'];
 	if(is_numeric($quantita)){
 		$carrello=$carrello.$idP.','.$modello.','.$quantita.','.$prezzo.',';
-		$_SESSION['carrello']=$carrello;
+        setcookie("carrello", $carrello);
+
     	header('Location: ' . $_SERVER['HTTP_REFERER']);
 	}
 	else{
