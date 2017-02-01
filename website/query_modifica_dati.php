@@ -15,21 +15,27 @@
 
 	//modifica indirizzo
 	if($to_do==0){
+
 		$modifica=$_POST['nuovo_indirizzo'];
-		$query = "UPDATE cliente SET indirizzo='$modifica' WHERE cf='$cf'";
-		$ris =mysqli_query($connessione,$query);
-		mysqli_close($connessione);
-		echo '<script language=javascript>alert("Indirizzo modificato correttamente")</script>';
-		echo '<script language=javascript>document.location.href="utente.php"</script>';
+		if($modifica!=null){
+			$query = "UPDATE cliente SET indirizzo='$modifica' WHERE cf='$cf'";
+			$ris =mysqli_query($connessione,$query);
+			mysqli_close($connessione);
+			echo '<script language=javascript>alert("Indirizzo modificato correttamente")</script>';
+			echo '<script language=javascript>document.location.href="utente.php"</script>';
+		}
+		
 	}
 	//modifica telefono
 	else if($to_do==1){
 		$modifica=$_POST['nuovo_telefono'];
-		$query = "UPDATE cliente SET telefono='$modifica' WHERE cf='$cf'";
-		$ris =mysqli_query($connessione,$query);
-		mysqli_close($connessione);
-		echo '<script language=javascript>alert("Telefono modificato correttamente")</script>';
-		echo '<script language=javascript>document.location.href="utente.php"</script>';
+		if($modifica!=null && is_numeric($modifica)){
+			$query = "UPDATE cliente SET telefono='$modifica' WHERE cf='$cf'";
+			$ris =mysqli_query($connessione,$query);
+			mysqli_close($connessione);
+			echo '<script language=javascript>alert("Telefono modificato correttamente")</script>';
+			echo '<script language=javascript>document.location.href="utente.php"</script>';
+		}
 	}
 	//modifica mail
 	else if($to_do==2){

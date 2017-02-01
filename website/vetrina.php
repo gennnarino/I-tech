@@ -25,9 +25,10 @@
 							<?php
 								if($log && !$Admin){
 										echo 	'<form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
+													<input hidden="true" type="text" name="n_prodotti" value="2" >
                     								<input hidden="true" type="text" name="idP" value="30" >
                     								<input hidden="true" type="text" name="modello" value="Ricondizionato">
-                    								<input hidden="true" type="text" name="quantita" value="1">
+                    								<input hidden="true" type="number" name="quantita" value="1">
                     								<input hidden="true" type="text" name="prezzo" value="399">
                     								<button type="submit" class="btn btn-success">
                         								<span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
@@ -59,9 +60,10 @@
 							<?php
 								if($log && !$Admin){
 										echo 	'<form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
-                    								<input hidden="true" type="text" name="idP" value="2" >
+                    								<input hidden="true" type="text" name="n_prodotti" value="2" >
+                    								<input hidden="true" type="text" name="idP" value="29" >
                     								<input hidden="true" type="text" name="modello" value="Game Extreme On">
-                    								<input hidden="true" type="text" name="quantita" value="29">
+                    								<input hidden="true" type="number" name="quantita" value="1">
                     								<input hidden="true" type="text" name="prezzo" value="1199">
                     								<button type="submit" class="btn btn-success">
                         								<span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
@@ -93,9 +95,10 @@
 							<?php
 								if($log && !$Admin){
 										echo 	'<form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
-                    								<input hidden="true" type="text" name="idP" value="1" >
+                    								<input hidden="true" type="text" name="n_prodotti" value="2">
+                    								<input hidden="true" type="text" name="idP" value="28" >
                     								<input hidden="true" type="text" name="modello" value="Tab 3">
-                    								<input hidden="true" type="text" name="quantita" value="28">
+                    								<input hidden="true" type="number" name="quantita" value="1">
                     								<input hidden="true" type="text" name="prezzo" value="199">
                     								<button type="submit" class="btn btn-success">
                         								<span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
