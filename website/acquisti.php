@@ -119,7 +119,7 @@
 					  </section>';
 			}
 			else{
-				include"script_tabella_storico.php";
+				include"query_visualizza_ordine.php";
 			}
 		?>
 		<!-- FINE Corpo -->
