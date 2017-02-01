@@ -1,8 +1,3 @@
-<?php
-	session_start();
-	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];	
-?>
 <!-- Offerte in evidenza -->
 			<section id="offerte-in-evidenza">
 				<div class="row">
