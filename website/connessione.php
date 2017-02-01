@@ -11,7 +11,7 @@ $DBuser = "itech";
 // password dell'utente
 $DBpassword = "itech";
 
-$db ="negozio";
+$db ="itech";
 // stringa di connessione al DBMS
 $connessione = new mysqli($host, $DBuser, $DBpassword, $db);
 

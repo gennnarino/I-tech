@@ -57,13 +57,6 @@
 									</li>
 									<li>
 										<?php
-											if(!$Admin){
-												echo"<a href=\"riparazioni.php?rip=1\">Info riparazioni</a>";
-											}
-										?>
-									</li>
-									<li>
-										<?php
 											if($Admin){
 												echo"<a href=\"riparazioni.php?rip=2\">Richieste di riparazione</a>";
 											}
@@ -73,6 +66,13 @@
 										<?php
 											if(!$Admin){
 												echo"<a href=\"riparazioni.php?rip=3\">Le mie riparazioni</a>";
+											}
+										?>
+									</li>
+									<li>
+										<?php
+											if(!$Admin){
+												echo"<a href=\"riparazioni.php?rip=1\">Info riparazioni</a>";
 											}
 										?>
 									</li>

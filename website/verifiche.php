@@ -35,8 +35,9 @@
 
     if(strlen($codf)!= 16)
 		return false;
-
+	/*
     $codf=strtoupper($codf);
+    
     if(!preg_match("/[A-Z0-9]+$/", $codf))
 		return false;
     $s = 0;
@@ -47,7 +48,7 @@
 		else
 	    	$s+=ord($c)-ord('A');
     }
-
+    
     for($i=0; $i<=14; $i+=2){
 		$c=$codf[$i];
 		switch($c){
@@ -89,10 +90,10 @@
 	    	case 'Z':  $s += 23;  break;
 		}
     }
-
+	
     if( chr($s%26+ord('A'))!=$codf[15] )
 		return false;
-
+	*/
     return true;
 }
 ?>

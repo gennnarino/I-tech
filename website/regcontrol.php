@@ -17,7 +17,7 @@ $count_pass = strlen($pass);
 
 
 if($nome!=null && $cognome!=null && $indirizzo!=null && $cf!=null && $telefono!=null && $mail!=null && $pass!=null){
-	//if(codiceFiscale($cf)){
+	if(codiceFiscale($cf)){
 		if(is_numeric($telefono)){
 			if(chkEmail($mail)){
 				if($count_pass>6){  
@@ -55,11 +55,11 @@ if($nome!=null && $cognome!=null && $indirizzo!=null && $cf!=null && $telefono!=
 			echo '<script language=javascript>document.location.href="registrazione.php"</script>';
 		}
 	
-	//}
-	//else{
-	//	echo '<script language=javascript>alert("Codice fiscale non corretto")</script>';
-	//	echo '<script language=javascript>document.location.href="registrazione.php"</script>';
-	//}
+	}
+	else{
+		echo '<script language=javascript>alert("Codice fiscale non corretto")</script>';
+		echo '<script language=javascript>document.location.href="registrazione.php"</script>';
+	}
 }
 else{
 	echo '<script language=javascript>alert("Per la registrazione sono obbligatori tutti i dati")</script>';

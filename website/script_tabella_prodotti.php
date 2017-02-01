@@ -41,7 +41,7 @@
                         echo    '<tr>       
                                     <th>Prezzo acquisto</th>   
                                     <td>
-                                        '.$prezzo_IN.'
+                                        '.$prezzo_IN.' ,00 €
                                     </td>
                                     <td>
                         
@@ -63,7 +63,7 @@
     				<th>Prezzo</th>  	
     			  	<td>
     			  		<?php
-                            echo $prezzo_OUT;
+                            echo $prezzo_OUT.',00 €';
                         ?>
     			  	</td>
     			  	<td></td>

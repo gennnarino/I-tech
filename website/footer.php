@@ -11,10 +11,12 @@
 						<div class="row">
 							<div class="col-sm-10">
 								<div class="input-group">
-									<input type="text" class="form-control">
-									<span class="input-group-btn">
-										<button class="btn btn-success" type="button"> ISCRIVITI </button>
-									</span>
+									<form method="POST" action="mailto:forestastefano@gmail.com">
+										<input type="text" class="form-control">
+										<span class="input-group-btn">
+											<button class="btn btn-success" type="button"> ISCRIVITI </button>
+										</span>
+									<form>
 								</div>
 							</div>
 						</div>
