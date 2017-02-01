@@ -2,14 +2,15 @@
 session_start();
 include ("connessione.php");
 $utente=$_SESSION['username'];
-$admin=$_SESSION['username'];
+$admin=$_SESSION['admin'];
 if($admin==false){
 $query = "SELECT cf FROM cliente WHERE email = '$utente' ";
 $ris= mysqli_query ($connessione,$query);
 $rs = mysqli_fetch_assoc($ris);
 $cf = $rs['cf'];
 $queryyy = mysqli_query($connessione,"SELECT * FROM ordine where cf = '$cf' ");
-}else{
+}
+if($admin==true){
 $queryyy = mysqli_query($connessione,"SELECT * FROM ordine ");
 }
 
