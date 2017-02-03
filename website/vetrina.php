@@ -35,6 +35,13 @@
                     								</button>
                 								</form>'; 
 										}
+										else{
+											echo 	'<form id="carrello-form" class="form-inline" method="POST" action="registrazione.php">
+														<button type="submit" class="btn btn-success">
+                        									<span class="glyphicon glyphicon-shopping-cart"></span>   Registrati per acquistare
+                    									</button>
+                									</form>';
+										}
 							?>
 						</div>
 					</div>
@@ -70,6 +77,13 @@
                     								</button>
                 								</form>'; 
 										}
+										else{
+											echo 	'<form id="carrello-form" class="form-inline" method="POST" action="registrazione.php">
+														<button type="submit" class="btn btn-success">
+                        									<span class="glyphicon glyphicon-shopping-cart"></span>   Registrati per acquistare
+                    									</button>
+                									</form>';
+										}
 							?>
 						</div>
 					</div>
@@ -104,6 +118,13 @@
                         								<span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi al carrello
                     								</button>
                 								</form>'; 
+										}
+										else{
+											echo 	'<form id="carrello-form" class="form-inline" method="POST" action="registrazione.php">
+														<button type="submit" class="btn btn-success">
+                        									<span class="glyphicon glyphicon-shopping-cart"></span>   Registrati per acquistare
+                    									</button>
+                									</form>';
 										}
 							?>
 						</div>

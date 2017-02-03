@@ -23,7 +23,8 @@
             $descrizione=$row["descrizione"];
             $categoria=$row["categoria"];
             $venduti=$row["venduti"];
-
+            $idP=$row["idP"];
+            $magazzino=1;
             include("script_tabella_prodotti.php");
         }       
     }

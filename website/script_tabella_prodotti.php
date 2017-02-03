@@ -122,12 +122,21 @@
     </div>
 
     <?php
-        if($Admin){
-            echo    '<p>
-                        '.$categoria.'
-                    </p>';
-        }
-                
+        if($Admin && $magazzino==1){
+    ?>
+        <p>
+            <?php echo ''.$categoria.'' ?>
+        </p>
+                    <form id="aggiungi-form" class="form-inline" method="POST" action="query_aggiorna_quantita.php">
+                        <input hidden="true" type="text" name="idP" value= <?php echo '"'.$idP.'"' ?> >
+                        <input hidden="true" type="text" name="n_prodotti" value= <?php echo '"'.$quantita.'"' ?> >
+                        <input type="text" class="form-control" name="quantita" placeholder="1">
+                        <button type="submit" class="btn btn-success">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>   Aggiungi prodotti
+                        </button>
+                    </form>
+    <?php
+        }       
     ?>
             
 	<div class="row">
