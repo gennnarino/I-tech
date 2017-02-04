@@ -27,11 +27,8 @@
     
       } 
       else if($admin){
-            echo $_SESSION['admin'].'<br>';
             $query = mysqli_query($connessione,"SELECT * FROM riparazione");
-            echo $_SESSION['admin'].'<br>';
             while($ciclo=mysqli_fetch_assoc($query)){
-                  echo $_SESSION['admin'].'<br>';
                   $id = $ciclo[idR];
                   $descrizione = $ciclo[descrizione];
                   $prezzo = $ciclo[prezzo];
@@ -39,9 +36,7 @@
                   $cliente = $ciclo[cliente];
                   include("script_tabella_riparazioni.php");
             }
-            echo $_SESSION['admin'].'<br>'; 
       }
-      echo $_SESSION['admin'].'<br>';
       mysqli_close($connessione);
       
 

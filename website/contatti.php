@@ -91,8 +91,16 @@
                             Telefono/fax: 089 96 0000
                         </address>
                         <address>
-                            <strong>E-mail</strong><br>
+                            <strong>E-mail info</strong><br>
                             <a href="mailto:#">info@itech.it</a>
+                        </address>
+                        <address>
+                            <strong>E-mail admin</strong><br>
+                            <a href="mailto:#">admin@itech.it</a>
+                        </address>
+                        <address>
+                            <strong>E-mail acquisti</strong><br>
+                            <a href="mailto:#">acquisti@itech.it</a>
                         </address>
                         <!-- FINE Recapiti -->
 

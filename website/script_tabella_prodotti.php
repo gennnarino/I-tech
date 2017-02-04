@@ -116,6 +116,13 @@
             </div>
         <?php 
             }
+            else if(!$log){
+                echo    '<form id="carrello-form" class="form-inline" method="POST" action="registrazione.php">
+                            <button type="submit" class="btn btn-success">
+                                <span class="glyphicon glyphicon-shopping-cart"></span>   Registrati per acquistare
+                            </button>
+                        </form>';
+            }
         ?>
             
         <div class="col-sm-1"></div>

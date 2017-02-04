@@ -2,7 +2,7 @@
 	session_start();
 	$rip=$_GET['rip'];
 	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
+	$admin=$_SESSION['admin'];
 	$user=$_SESSION['username'];
 ?>
 <!DOCTYPE html>
@@ -104,8 +104,9 @@
 			</div>
 		</section>
 		<!-- FINE Barra testata di pagina -->
-
+		<div class="col-sm-2"></div>
 		<!-- Corpo pagina -->
+		
 		<?php
 			if($rip==0){
 				include"Richiedi_Riparazione.php";
@@ -121,8 +122,9 @@
 			}	
 		?>
 		<!-- FINE Corpo pagina -->
+		<div class="col-sm-2"></div>
 
-<?php
-		include "footer.php";
-	?>
+		<?php
+			include "footer.php";
+		?>
 </html>

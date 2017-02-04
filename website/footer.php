@@ -78,7 +78,9 @@
                         </address>
                         <address>
                             <strong>E-mail</strong><br>
-                            <a href="mailto:#">info@itech.it</a>
+                            <a href="mailto:#">info@itech.it</a><br>
+                            <a href="mailto:#">admin@itech.it</a><br>
+                            <a href="mailto:#">acquisti@itech.it</a>
                         </address>
                     </div>
 					<!-- FINE Contatti -->

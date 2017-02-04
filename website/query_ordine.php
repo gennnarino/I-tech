@@ -9,7 +9,7 @@ $rs = mysqli_fetch_assoc($ris);
 $cf = $rs['cf'];
 $prezzo_tot=$_POST['totale_ordine'];
 
-$query = "INSERT INTO ordine (cf,stato,prezzo,data) VALUES ('$cf', 'PAGATO',$prezzo_tot,NOW())"; 
+$query = "INSERT INTO ordine (cf,stato,prezzo,data) VALUES ('$cf', 'PAGATO',$prezzo_tot,CURDATE())"; 
 $ris =mysqli_query($connessione,$query);
 
 $query = "SELECT MAX(idO) FROM ordine WHERE cf = '$cf'"; 
