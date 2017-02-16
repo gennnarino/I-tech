@@ -145,6 +145,20 @@
     <?php
         }       
     ?>
+
+    <?php
+        if($Admin && $magazzino==1){
+    ?>
+                    <form id="aggiungi-form" class="form-inline" method="POST" action="query_aggiorna_prezzo.php">
+                        <input hidden="true" type="text" name="idP" value= <?php echo '"'.$idP.'"' ?> >
+                        <input type="text" class="form-control" name="prezzo_mod" placeholder="1">
+                        <button type="submit" class="btn btn-success">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>   Modifica prezzo
+                        </button>
+                    </form>
+    <?php
+        }       
+    ?>
             
 	<div class="row">
         <div class="table-responsive col-sm-12">
