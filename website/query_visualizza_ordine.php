@@ -1,7 +1,7 @@
 <?  
 session_start();
 include ("connessione.php");
-$utente=$_SESSION['username'];
+$utente=strip_tags($_SESSION['username']);
 $admin=$_SESSION['admin'];
 if($admin==false){
 $query = "SELECT cf FROM cliente WHERE email = '$utente' ";

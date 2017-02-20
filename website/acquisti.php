@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$acq=$_GET['acq'];
+	$acq=strip_tags($_GET['acq']);
 	$log=$_SESSION['loggato'];
 	$admin=$_SESSION['admin'];
 	

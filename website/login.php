@@ -3,8 +3,8 @@ session_start();
 
 include ("connessione.php");
 include ("verifiche.php");
-$user=$_POST['mail'];
-$pass=$_POST['pass'];
+$user=strip_tags($_POST['mail']);
+$pass=strip_tags($_POST['pass']);
 
 if($user!=null && $pass!=null){
 	if(chkEmail($user)){

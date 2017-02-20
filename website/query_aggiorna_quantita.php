@@ -1,10 +1,10 @@
 <?php 
 	session_start();
 	include ("connessione.php");
-	$idP=$_POST['idP'];
+	$idP=strip_tags($_POST['idP']);
 	echo $idP;
-	$quantita=$_POST['quantita'];
-	$n_prodotti=$_POST['n_prodotti'];
+	$quantita=strip_tags($_POST['quantita']);
+	$n_prodotti=strip_tags($_POST['n_prodotti']);
 	if(is_numeric($quantita)){
 		$tot=$quantita+$n_prodotti;
 		$query= "UPDATE prodotto SET quantita = $tot WHERE idP = $idP";

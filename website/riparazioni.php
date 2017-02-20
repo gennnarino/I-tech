@@ -1,9 +1,9 @@
 <?php
 	session_start();
-	$rip=$_GET['rip'];
+	$rip=strip_tags($_GET['rip']);
 	$log=$_SESSION['loggato'];
 	$admin=$_SESSION['admin'];
-	$user=$_SESSION['username'];
+	$user=strip_tags($_SESSION['username']);
 ?>
 <!DOCTYPE html>
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->

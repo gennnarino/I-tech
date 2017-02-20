@@ -3,20 +3,20 @@
 	include ("connessione.php");
 	include ("verifiche.php");
 	$admin=$_SESSION['admin'];
-	$to_do=$_GET['mod'];
+	$to_do=strip_tags($_GET['mod']);
 
 	if(!$admin){
-		$cf=$_POST['cf'];
+		$cf=strip_tags($_POST['cf']);
 	}
 	else{
-		$email=$_POST['mail'];
+		$email=strip_tags($_POST['mail']);
 	}
 	
 
 	//modifica indirizzo
 	if($to_do==0){
 
-		$modifica=$_POST['nuovo_indirizzo'];
+		$modifica=strip_tags($_POST['nuovo_indirizzo']);
 		if($modifica!=null){
 			$query = "UPDATE cliente SET indirizzo='$modifica' WHERE cf='$cf'";
 			$ris =mysqli_query($connessione,$query);
@@ -32,7 +32,7 @@
 	}
 	//modifica telefono
 	else if($to_do==1){
-		$modifica=$_POST['nuovo_telefono'];
+		$modifica=strip_tags($_POST['nuovo_telefono']);
 		if($modifica!=null && is_numeric($modifica)){
 			$query = "UPDATE cliente SET telefono='$modifica' WHERE cf='$cf'";
 			$ris =mysqli_query($connessione,$query);
@@ -47,7 +47,7 @@
 	}
 	//modifica mail
 	else if($to_do==2){
-		$modifica=$_POST['nuovo_mail'];
+		$modifica=strip_tags($_POST['nuovo_mail']);
 		if(chkEmail($modifica)){
 			$query = "UPDATE cliente SET email='$modifica' WHERE cf='$cf'";
 			$ris =mysqli_query($connessione,$query);
@@ -64,7 +64,7 @@
 	}
 	//modifica password
 	else if($to_do==3){
-		$modifica=$_POST['nuovo_pass'];
+		$modifica=strip_tags($_POST['nuovo_pass']);
 		$conteggio=strlen($modifica);
 		if($conteggio>5){
 			$query = "UPDATE cliente SET passw='$modifica' WHERE cf='$cf'";
@@ -82,7 +82,7 @@
 
 	//modifica mail admin
 	else if($to_do==4){
-		$modifica=$_POST['nuovo_mailA'];
+		$modifica=strip_tags($_POST['nuovo_mailA']);
 		if(chkEmail($modifica)){
 			$query = "UPDATE admin SET email='$modifica' WHERE email='$email'";
 			echo $query;
@@ -101,7 +101,7 @@
 	else if($to_do==5){
 		$conteggio=strlen($modifica);
 		if($conteggio>5){
-			$modifica=$_POST['nuovo_passA'];
+			$modifica=strip_tags($_POST['nuovo_passA']);
 			$query = "UPDATE admin SET passw='$modifica' WHERE email='$email'";
 			$ris =mysqli_query($connessione,$query);
 			mysqli_close($connessione);

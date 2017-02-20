@@ -1,9 +1,9 @@
 <?php
 session_start();
 include("connessione.php");
-$prezzo=$_POST['prezzo'];
-$id= $_POST['id'];
-$prox_stato = $_POST['stato'];
+$prezzo=strip_tags($_POST['prezzo']);
+$id= strip_tags($_POST['id']);
+$prox_stato = strip_tags($_POST['stato']);
 $query = "UPDATE riparazione SET prezzo = '$prezzo',stato= '$prox_stato' WHERE idR = '$id' ";
 if($prox_stato=="ACCETTAZIONE"){
 		$messaggio="Preventivo con prezzo inoltrato";

@@ -2,13 +2,13 @@
 session_start(); 
 include ("connessione.php");
 include ("verifiche.php");
-$nome=$_POST['nome'];
-$cognome=$_POST['cognome'];
-$indirizzo=$_POST['indirizzo'];
-$cf=strtoupper ($_POST['cf']);
-$telefono=$_POST['telefono'];
-$mail=$_POST['mail'];
-$pass=$_POST['pass'];
+$nome=strip_tags($_POST['nome']);
+$cognome=strip_tags($_POST['cognome']);
+$indirizzo=strip_tags($_POST['indirizzo']);
+$cf=strip_tags(strtoupper ($_POST['cf']));
+$telefono=strip_tags($_POST['telefono']);
+$mail=strip_tags($_POST['mail']);
+$pass=strip_tags($_POST['pass']);
 
 $count_pass = strlen($pass);
 

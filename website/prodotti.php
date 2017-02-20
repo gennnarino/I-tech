@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	$prod=$_GET['prodotto'];
+	$prod=strip_tags($_GET['prodotto']);
 	$log=$_SESSION['loggato'];
 	$admin=$_SESSION['admin'];
 	

@@ -2,7 +2,7 @@
 	session_start();
 	$log=$_SESSION['loggato'];
 	$admin=$_SESSION['admin'];
-	$mag=$_GET['mag'];
+	$mag=strip_tags($_GET['mag']);
 ?>
 <!DOCTYPE html>
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->

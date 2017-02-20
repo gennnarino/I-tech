@@ -1,8 +1,8 @@
 <?php
 session_start(); 
 include ("connessione.php");
-$descrizione=$_POST['textMessaggio'];
-$user=$_SESSION['username'];
+$descrizione=strip_tags($_POST['textMessaggio']);
+$user=strip_tags($_SESSION['username']);
 //Richiedo il codice fiscale del cliente
 $queryy = "SELECT cf FROM cliente WHERE email = '$user' ";
 $ris= mysqli_query ($connessione,$queryy);

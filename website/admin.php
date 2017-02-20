@@ -2,8 +2,8 @@
 	session_start();
 	$log=$_SESSION['loggato'];
 	$admin=$_SESSION['admin'];
-	$pass=$_SESSION['password'];
-	$mail=$_SESSION['username'];
+	$pass=strip_tags($_SESSION['password']);
+	$mail=strip_tags($_SESSION['username']);
 ?>
 <!DOCTYPE html>
 	<!--[if IE 8]><html class="no-js lt-ie9" lang="en" ><![endif]-->

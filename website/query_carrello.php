@@ -1,11 +1,11 @@
 <?php 
 	session_start();
 	$carrello=$_COOKIE["carrello"];
-	$idP=$_POST['idP'];
-	$quantita=$_POST['quantita'];
-	$prezzo=$_POST['prezzo'];
-	$modello=$_POST['modello'];
-	$n_prodotti=$_POST['n_prodotti'];
+	$idP=strip_tags($_POST['idP']);
+	$quantita=strip_tags($_POST['quantita']);
+	$prezzo=strip_tags($_POST['prezzo']);
+	$modello=strip_tags($_POST['modello']);
+	$n_prodotti=strip_tags($_POST['n_prodotti']);
 	if(is_numeric($quantita)){
 		if($n_prodotti>$quantita){
 			$carrello=$carrello.$idP.','.$modello.','.$quantita.','.$prezzo.',';

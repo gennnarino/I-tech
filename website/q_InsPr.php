@@ -1,6 +1,6 @@
 <?php
     session_start(); 
-
+    $admin=$_SESSION['admin'];
     include ("connessione.php");
 
     $target_dir = "website/imgProd";
@@ -57,22 +57,29 @@
         
             if($categoria!=null && $modello!=null && $marca!=null && $descrizione!=null && $immagine!=null && $prezzo_in!=null && $prezzo_out!=null && $quantita!=null){
                 if(is_numeric($prezzo_in) && is_numeric($prezzo_out) && is_numeric($quantita)){
-                    $query = "SELECT idP FROM prodotto WHERE categoria='$categoria', modello='$modello', marca='$marca'";
+                    $query = "SELECT idP FROM prodotto WHERE categoria='$categoria' AND modello='$modello' AND marca='$marca'";
                     if(mysqli_query ($connessione,$query)){
-                        $queryy = "INSERT INTO prodotto (categoria,modello,marca,descrizione,immagine,prezzo_in,prezzo_out,quantita) VALUES ('$categoria', '$modello','$marca','$descrizione','$immagine',$prezzo_in,$prezzo_out,$quantita)";
-                        if (mysqli_query ($connessione,$queryy)) {
-                            if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                                echo '<script language=javascript>alert("Prodotto inserito correttamente")</script>';
-                                echo '<script language=javascript>document.location.href="magazzino.php?mag=1"</script>';
+                        if($admin){
+                            $queryy = "INSERT INTO prodotto (categoria,modello,marca,descrizione,immagine,prezzo_in,prezzo_out,quantita) VALUES ('$categoria', '$modello','$marca','$descrizione','$immagine',$prezzo_in,$prezzo_out,$quantita)";
+                            if (mysqli_query ($connessione,$queryy)) {
+                                if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
+                                    echo '<script language=javascript>alert("Prodotto inserito correttamente")</script>';
+                                    echo '<script language=javascript>document.location.href="magazzino.php?mag=1"</script>';
+                                }
+                                else {
+                                    echo '<script language=javascript>alert("Immagine non inserita, riprovare")</script>';
+                                }
                             }
                             else {
-                                echo '<script language=javascript>alert("Immagine non inserita, riprovare")</script>';
+                                echo '<script language=javascript>alert("Erore sconosciuto durante l\'inserimento del prodotto")</script>';
+                                echo '<script language=javascript>document.location.href="magazzino.php?mag=0"</script>';
                             }
                         }
-                        else {
-                            echo '<script language=javascript>alert("Erore sconosciuto durante l\'inserimento del prodotto")</script>';
-                            echo '<script language=javascript>document.location.href="magazzino.php?mag=0"</script>';
+                        else{
+                            echo '<script language=javascript>alert("Permesso negato")</script>';
+                            echo '<script language=javascript>document.location.href="index.php"</script>';
                         }
+                        
                     }
                     else{
                         echo '<script language=javascript>alert("Prodotto esistente")</script>';

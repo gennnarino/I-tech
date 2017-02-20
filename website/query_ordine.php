@@ -1,13 +1,13 @@
 <?php 
 session_start();
 include ("connessione.php");
-$utente=$_SESSION['username'];
+$utente=strip_tags($_SESSION['username']);
 
 $query = "SELECT cf FROM cliente WHERE email = '$utente' ";
 $ris= mysqli_query ($connessione,$query);
 $rs = mysqli_fetch_assoc($ris);
 $cf = $rs['cf'];
-$prezzo_tot=$_POST['totale_ordine'];
+$prezzo_tot=strip_tags($_POST['totale_ordine']);
 
 $query = "INSERT INTO ordine (cf,stato,prezzo,data) VALUES ('$cf', 'PAGATO',$prezzo_tot,CURDATE())"; 
 $ris =mysqli_query($connessione,$query);
