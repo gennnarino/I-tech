@@ -2,7 +2,7 @@
 	session_start();
 	$acq=$_GET['acq'];
 	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
+	$admin=$_SESSION['admin'];
 	
 ?>
 <!DOCTYPE html>

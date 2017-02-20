@@ -50,28 +50,28 @@
 								<ul class="dropdown-menu">
 									<li>
 										<?php
-											if(!$Admin){
+											if(!$admin){
 												echo"<a href=\"riparazioni.php?rip=0\">Richiesta riparazione</a>";
 											}
 										?>
 									</li>
 									<li>
 										<?php
-											if($Admin){
+											if($admin){
 												echo"<a href=\"riparazioni.php?rip=2\">Richieste di riparazione</a>";
 											}
 										?>
 									</li>
 									<li>
 										<?php
-											if(!$Admin){
+											if(!$admin){
 												echo"<a href=\"riparazioni.php?rip=3\">Le mie riparazioni</a>";
 											}
 										?>
 									</li>
 									<li>
 										<?php
-											if(!$Admin){
+											if(!$admin){
 												echo"<a href=\"riparazioni.php?rip=1\">Info riparazioni</a>";
 											}
 										?>
@@ -84,7 +84,7 @@
 							<!-- Verifica se admin o cliente -->
 							<li class="dropdown">
 								<?php
-									if(!$Admin){
+									if(!$admin){
 										echo	'<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 													Acquisti<span class="caret"></span>
 												</a>
@@ -123,7 +123,7 @@
 
 							<!-- Menu utenti -->
 							<?php
-								if($Admin){
+								if($admin){
 									echo"<li>
 											<a href=\"utenti.php?\">Utenti</a>
 										</li>";
@@ -134,7 +134,7 @@
 							<!-- Accesso e registrazione-->
 							<li>
 								<?php
-									if(!$Admin){
+									if(!$admin){
 										echo"<a href=\"utente.php\">Area Utente</a>";
 									}
 									else{
@@ -145,7 +145,7 @@
 
 							<!-- Contatti -->
 							<?php
-								if(!$Admin){
+								if(!$admin){
 									echo"<li>
 											<a href=\"contatti.php?rip=2\">Contatti</a>
 										</li>";

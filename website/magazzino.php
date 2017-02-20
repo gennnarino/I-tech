@@ -1,7 +1,7 @@
 <?php
 	session_start();
 	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
+	$admin=$_SESSION['admin'];
 	$mag=$_GET['mag'];
 ?>
 <!DOCTYPE html>

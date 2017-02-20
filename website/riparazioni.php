@@ -104,9 +104,8 @@
 			</div>
 		</section>
 		<!-- FINE Barra testata di pagina -->
-		<div class="col-sm-2"></div>
-		<!-- Corpo pagina -->
 		
+		<!-- Corpo pagina -->
 		<?php
 			if($rip==0){
 				include"Richiedi_Riparazione.php";

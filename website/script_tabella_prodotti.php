@@ -37,7 +37,7 @@
     			  	<td></td>
     			</tr>
                 <?php
-                    if($Admin){
+                    if($admin){
                         echo    '<tr>       
                                     <th>Prezzo acquisto</th>   
                                     <td>
@@ -100,7 +100,7 @@
         <div class="col-sm-1"></div>
         
         <?php
-            if($log && !$Admin){
+            if($log && !$admin){
         ?>
             <div class="col-sm-10">
                 <form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
@@ -129,7 +129,7 @@
     </div>
 
     <?php
-        if($Admin && $magazzino==1){
+        if($admin && $magazzino==1){
     ?>
         <p>
             <?php echo ''.$categoria.'' ?>
@@ -147,7 +147,7 @@
     ?>
 
     <?php
-        if($Admin && $magazzino==1){
+        if($admin && $magazzino==1){
     ?>
                     <form id="aggiungi-form" class="form-inline" method="POST" action="query_aggiorna_prezzo.php">
                         <input hidden="true" type="text" name="idP" value= <?php echo '"'.$idP.'"' ?> >

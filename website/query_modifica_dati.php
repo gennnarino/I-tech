@@ -24,6 +24,10 @@
 			echo '<script language=javascript>alert("Indirizzo modificato correttamente")</script>';
 			echo '<script language=javascript>document.location.href="utente.php"</script>';
 		}
+		else{
+			echo '<script language=javascript>alert("Indirizzo non valido")</script>';
+			echo '<script language=javascript>document.location.href="utente.php"</script>';
+		}
 		
 	}
 	//modifica telefono
@@ -34,6 +38,10 @@
 			$ris =mysqli_query($connessione,$query);
 			mysqli_close($connessione);
 			echo '<script language=javascript>alert("Telefono modificato correttamente")</script>';
+			echo '<script language=javascript>document.location.href="utente.php"</script>';
+		}
+		else{
+			echo '<script language=javascript>alert("Numero di telefono non valido")</script>';
 			echo '<script language=javascript>document.location.href="utente.php"</script>';
 		}
 	}

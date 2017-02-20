@@ -23,7 +23,7 @@
 							</p>
 							<!--iinserire un carattere piu bello, togliere il blu-->
 							<?php
-								if($log && !$Admin){
+								if($log && !$admin){
 										echo 	'<form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
 													<input hidden="true" type="text" name="n_prodotti" value="2" >
                     								<input hidden="true" type="text" name="idP" value="30" >
@@ -65,7 +65,7 @@
 								Prezzo 1199,00€
 							</p>
 							<?php
-								if($log && !$Admin){
+								if($log && !$admin){
 										echo 	'<form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
                     								<input hidden="true" type="text" name="n_prodotti" value="2" >
                     								<input hidden="true" type="text" name="idP" value="29" >
@@ -107,7 +107,7 @@
 								Prezzo 199,00€
 							</p>
 							<?php
-								if($log && !$Admin){
+								if($log && !$admin){
 										echo 	'<form id="carrello-form" class="form-inline" method="POST" action="query_carrello.php">
                     								<input hidden="true" type="text" name="n_prodotti" value="2">
                     								<input hidden="true" type="text" name="idP" value="28" >

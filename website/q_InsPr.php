@@ -62,7 +62,7 @@
                         $queryy = "INSERT INTO prodotto (categoria,modello,marca,descrizione,immagine,prezzo_in,prezzo_out,quantita) VALUES ('$categoria', '$modello','$marca','$descrizione','$immagine',$prezzo_in,$prezzo_out,$quantita)";
                         if (mysqli_query ($connessione,$queryy)) {
                             if (move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file)) {
-                                echo '<script language=javascript>alert("Inserito Correttamente")</script>';
+                                echo '<script language=javascript>alert("Prodotto inserito correttamente")</script>';
                                 echo '<script language=javascript>document.location.href="magazzino.php?mag=1"</script>';
                             }
                             else {

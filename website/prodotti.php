@@ -2,7 +2,7 @@
 	session_start();
 	$prod=$_GET['prodotto'];
 	$log=$_SESSION['loggato'];
-	$Admin=$_SESSION['admin'];
+	$admin=$_SESSION['admin'];
 	
 ?>
 <!DOCTYPE html>
